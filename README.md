@@ -5,3 +5,4 @@ Ispan lab
 2. 常用視窗功能:classView, ObjectBrowser,文件大綱
 3. new新物件 範例:form call form功能
 4. 除錯燈泡與沒引入的誤進到classView搜索
+5. 建立方法
