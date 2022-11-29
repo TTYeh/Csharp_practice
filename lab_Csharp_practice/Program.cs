@@ -11,6 +11,7 @@ namespace lab_Csharp_practice
         static void Main(string[] args)
         {
             /* Write輸出後不換行 */
+
             Console.Write("請輸入姓名:");
             string myName = Console.ReadLine();
             Console.WriteLine("Hello" + myName);
