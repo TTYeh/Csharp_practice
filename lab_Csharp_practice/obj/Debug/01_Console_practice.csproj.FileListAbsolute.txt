@@ -1,8 +1,0 @@
-C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\lab_Csharp_practice\bin\Debug\lab_Csharp_practice.exe.config
-C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\lab_Csharp_practice\bin\Debug\lab_Csharp_practice.exe
-C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\lab_Csharp_practice\bin\Debug\lab_Csharp_practice.pdb
-C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\lab_Csharp_practice\obj\Debug\01_Console_practice.csproj.AssemblyReference.cache
-C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\lab_Csharp_practice\obj\Debug\01_Console_practice.csproj.SuggestedBindingRedirects.cache
-C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\lab_Csharp_practice\obj\Debug\01_Console_practice.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\lab_Csharp_practice\obj\Debug\lab_Csharp_practice.exe
-C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\lab_Csharp_practice\obj\Debug\lab_Csharp_practice.pdb
