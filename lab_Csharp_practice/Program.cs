@@ -9,11 +9,11 @@ namespace lab_Csharp_practice
     internal class Program
     {
         static void Main(string[] args)
-        {   
-            /* 哈哈 */
-            string myName = Console.ReadLine("World");
-            Console.ReadLine();
-            Console.WriteLine("Hello");
+        {
+            /* Write輸出後不換行 */
+            Console.Write("請輸入姓名:");
+            string myName = Console.ReadLine();
+            Console.WriteLine("Hello" + myName);
             Console.ReadKey();
         }
     }
