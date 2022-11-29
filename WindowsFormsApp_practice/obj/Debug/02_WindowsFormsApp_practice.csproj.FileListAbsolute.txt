@@ -10,3 +10,15 @@ C:\Users\User\Desktop\cSharp_practice\project\WindowsFormsApp_practice\WindowsFo
 C:\Users\User\Desktop\cSharp_practice\project\WindowsFormsApp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.exe
 C:\Users\User\Desktop\cSharp_practice\project\WindowsFormsApp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.pdb
 C:\Users\User\Desktop\cSharp_practice\project\WindowsFormsApp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.Form2.resources
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\bin\Debug\WindowsFormsApp_practice.exe.config
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\bin\Debug\WindowsFormsApp_practice.exe
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\bin\Debug\WindowsFormsApp_practice.pdb
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\02_WindowsFormsApp_practice.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\02_WindowsFormsApp_practice.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.Form1.resources
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.Form2.resources
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.Properties.Resources.resources
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\02_WindowsFormsApp_practice.csproj.GenerateResource.cache
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\02_WindowsFormsApp_practice.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.exe
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.pdb
