@@ -12,14 +12,10 @@ namespace WindowsFormsApp_practice
 {
     public partial class Form3 : Form
     {
+
         public Form3()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_register_event_Click(object sender, EventArgs e)
@@ -27,10 +23,16 @@ namespace WindowsFormsApp_practice
             // this.btn_register.Click += new System.EventHandler(this.button1_Click);
             // Point:按鈕的click 按照真的物件命名 += new EventHandler(事件觸發 自己創建的執行方法 )
             TestEvent_btn.Click += new EventHandler(this.TestEvent_btn_Click);
+            btn_register02.Click += btn_register02_click;
         }
         private void TestEvent_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("event trigger success !");
+            MessageBox.Show("09_A_Click_btn event trigger success !");
         }
+        private void btn_register02_click(object sender, EventArgs e)
+        {
+            MessageBox.Show("09_B_Click_btn event trigger success !");
+        }
+
     }
 }

@@ -30,6 +30,7 @@
         {
             this.btn_register_event = new System.Windows.Forms.Button();
             this.TestEvent_btn = new System.Windows.Forms.Button();
+            this.btn_register02 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_register_event
@@ -51,11 +52,21 @@
             this.TestEvent_btn.Text = "09_A_Click_btn";
             this.TestEvent_btn.UseVisualStyleBackColor = true;
             // 
+            // btn_register02
+            // 
+            this.btn_register02.Location = new System.Drawing.Point(113, 218);
+            this.btn_register02.Name = "btn_register02";
+            this.btn_register02.Size = new System.Drawing.Size(252, 66);
+            this.btn_register02.TabIndex = 1;
+            this.btn_register02.Text = "09_B_Click_btn";
+            this.btn_register02.UseVisualStyleBackColor = true;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_register02);
             this.Controls.Add(this.TestEvent_btn);
             this.Controls.Add(this.btn_register_event);
             this.Name = "Form3";
@@ -68,5 +79,6 @@
 
         private System.Windows.Forms.Button btn_register_event;
         private System.Windows.Forms.Button TestEvent_btn;
+        private System.Windows.Forms.Button btn_register02;
     }
 }
