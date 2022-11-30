@@ -35,5 +35,23 @@ namespace WindowsFormsApp_practice
             string userName = "jack";
             MessageBox.Show("我是"+ userName);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void returnMethod_Click(object sender, EventArgs e)
+        {
+            string birthYear = ReturnBirthYear(20);
+            MessageBox.Show(birthYear);
+        }
+
+        string ReturnBirthYear(int age)
+        {
+            int birthYear = DateTime.Now.Year - age;
+            string result = "出生年" + birthYear;
+            return result;
+        }
     }
 }

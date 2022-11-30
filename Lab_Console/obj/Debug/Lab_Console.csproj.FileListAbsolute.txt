@@ -1,0 +1,8 @@
+C:\Users\iSpan\Desktop\資料共用\Csharp\Csharp_Lab\Lab_Console\bin\Debug\Lab_Console.exe.config
+C:\Users\iSpan\Desktop\資料共用\Csharp\Csharp_Lab\Lab_Console\bin\Debug\Lab_Console.exe
+C:\Users\iSpan\Desktop\資料共用\Csharp\Csharp_Lab\Lab_Console\bin\Debug\Lab_Console.pdb
+C:\Users\iSpan\Desktop\資料共用\Csharp\Csharp_Lab\Lab_Console\obj\Debug\Lab_Console.csproj.AssemblyReference.cache
+C:\Users\iSpan\Desktop\資料共用\Csharp\Csharp_Lab\Lab_Console\obj\Debug\Lab_Console.csproj.SuggestedBindingRedirects.cache
+C:\Users\iSpan\Desktop\資料共用\Csharp\Csharp_Lab\Lab_Console\obj\Debug\Lab_Console.csproj.CoreCompileInputs.cache
+C:\Users\iSpan\Desktop\資料共用\Csharp\Csharp_Lab\Lab_Console\obj\Debug\Lab_Console.exe
+C:\Users\iSpan\Desktop\資料共用\Csharp\Csharp_Lab\Lab_Console\obj\Debug\Lab_Console.pdb
