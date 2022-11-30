@@ -10,3 +10,6 @@
 
 ---11/30學習回顧---
 1. add returnMethod
+2.封裝
+3.partial class
+4.property
