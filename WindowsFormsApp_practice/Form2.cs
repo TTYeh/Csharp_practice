@@ -66,8 +66,14 @@ namespace WindowsFormsApp_practice
             Member mem1 = new Member();
             mem1.Name = "John";
             mem1.Age = 40;
+            MessageBox.Show("member1:姓名" + mem1.Name + "年齡" + mem1.Age);
 
-            MessageBox.Show("姓名" + mem1.Name + "年齡" + mem1.Age);
+            Member mem2 = new Member()
+            {
+                Name = "Nintendo Switch",
+                Age = 10
+            };
+            MessageBox.Show("member2:姓名" + mem1.Name + "年齡" + mem1.Age);
         }
     }
 }
