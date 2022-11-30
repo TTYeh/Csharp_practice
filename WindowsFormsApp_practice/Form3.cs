@@ -34,5 +34,10 @@ namespace WindowsFormsApp_practice
             MessageBox.Show("09_B_Click_btn event trigger success !");
         }
 
+        private void cancel_register_Click(object sender, EventArgs e)
+        {
+            TestEvent_btn.Click -= new EventHandler(this.TestEvent_btn_Click);
+            btn_register02.Click -= btn_register02_click;
+        }
     }
 }
