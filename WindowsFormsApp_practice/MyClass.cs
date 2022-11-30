@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_practice
 {
-    internal class MyClass
+    internal partial class MyClass
     {
         internal void method01()
         {

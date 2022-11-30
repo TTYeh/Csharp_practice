@@ -33,6 +33,7 @@
             this.returnMethod = new System.Windows.Forms.Button();
             this.btn05_callOtherClassMethod = new System.Windows.Forms.Button();
             this.encapsulation_callMethod = new System.Windows.Forms.Button();
+            this.partialClassBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // openHelloForm
@@ -87,11 +88,23 @@
             this.encapsulation_callMethod.UseVisualStyleBackColor = true;
             this.encapsulation_callMethod.Click += new System.EventHandler(this.btn05_callOtherClassMethod_Click);
             // 
+            // partialClassBtn
+            // 
+            this.partialClassBtn.Location = new System.Drawing.Point(30, 337);
+            this.partialClassBtn.Name = "partialClassBtn";
+            this.partialClassBtn.Size = new System.Drawing.Size(184, 40);
+            this.partialClassBtn.TabIndex = 4;
+            this.partialClassBtn.TabStop = false;
+            this.partialClassBtn.Text = "partial class";
+            this.partialClassBtn.UseVisualStyleBackColor = true;
+            this.partialClassBtn.Click += new System.EventHandler(this.btn05_callOtherClassMethod_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.partialClassBtn);
             this.Controls.Add(this.encapsulation_callMethod);
             this.Controls.Add(this.btn05_callOtherClassMethod);
             this.Controls.Add(this.returnMethod);
@@ -110,5 +123,6 @@
         private System.Windows.Forms.Button returnMethod;
         private System.Windows.Forms.Button btn05_callOtherClassMethod;
         private System.Windows.Forms.Button encapsulation_callMethod;
+        private System.Windows.Forms.Button partialClassBtn;
     }
 }
