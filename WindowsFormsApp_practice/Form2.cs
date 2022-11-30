@@ -53,5 +53,14 @@ namespace WindowsFormsApp_practice
             string result = "出生年" + birthYear;
             return result;
         }
+
+        private void btn05_callOtherClassMethod_Click(object sender, EventArgs e)
+        {
+            MyClass mc= new MyClass();
+            mc.method01();
+            // private or default methods not allow to call
+            // mc.method02();
+            mc.method03();
+        }
     }
 }

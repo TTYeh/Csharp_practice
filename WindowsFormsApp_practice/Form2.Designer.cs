@@ -31,6 +31,7 @@
             this.openHelloForm = new System.Windows.Forms.Button();
             this.method_area = new System.Windows.Forms.Button();
             this.returnMethod = new System.Windows.Forms.Button();
+            this.btn05_callOtherClassMethod = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // openHelloForm
@@ -63,11 +64,23 @@
             this.returnMethod.UseVisualStyleBackColor = true;
             this.returnMethod.Click += new System.EventHandler(this.returnMethod_Click);
             // 
+            // btn05_callOtherClassMethod
+            // 
+            this.btn05_callOtherClassMethod.Location = new System.Drawing.Point(30, 234);
+            this.btn05_callOtherClassMethod.Name = "btn05_callOtherClassMethod";
+            this.btn05_callOtherClassMethod.Size = new System.Drawing.Size(184, 40);
+            this.btn05_callOtherClassMethod.TabIndex = 4;
+            this.btn05_callOtherClassMethod.TabStop = false;
+            this.btn05_callOtherClassMethod.Text = "05_call other class method";
+            this.btn05_callOtherClassMethod.UseVisualStyleBackColor = true;
+            this.btn05_callOtherClassMethod.Click += new System.EventHandler(this.btn05_callOtherClassMethod_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn05_callOtherClassMethod);
             this.Controls.Add(this.returnMethod);
             this.Controls.Add(this.method_area);
             this.Controls.Add(this.openHelloForm);
@@ -82,5 +95,6 @@
         private System.Windows.Forms.Button openHelloForm;
         private System.Windows.Forms.Button method_area;
         private System.Windows.Forms.Button returnMethod;
+        private System.Windows.Forms.Button btn05_callOtherClassMethod;
     }
 }
