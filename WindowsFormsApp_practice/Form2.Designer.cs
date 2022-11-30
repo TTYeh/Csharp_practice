@@ -32,6 +32,7 @@
             this.method_area = new System.Windows.Forms.Button();
             this.returnMethod = new System.Windows.Forms.Button();
             this.btn05_callOtherClassMethod = new System.Windows.Forms.Button();
+            this.encapsulation_callMethod = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // openHelloForm
@@ -75,11 +76,23 @@
             this.btn05_callOtherClassMethod.UseVisualStyleBackColor = true;
             this.btn05_callOtherClassMethod.Click += new System.EventHandler(this.btn05_callOtherClassMethod_Click);
             // 
+            // encapsulation_callMethod
+            // 
+            this.encapsulation_callMethod.Location = new System.Drawing.Point(30, 280);
+            this.encapsulation_callMethod.Name = "encapsulation_callMethod";
+            this.encapsulation_callMethod.Size = new System.Drawing.Size(184, 40);
+            this.encapsulation_callMethod.TabIndex = 4;
+            this.encapsulation_callMethod.TabStop = false;
+            this.encapsulation_callMethod.Text = "封裝encapsulation";
+            this.encapsulation_callMethod.UseVisualStyleBackColor = true;
+            this.encapsulation_callMethod.Click += new System.EventHandler(this.btn05_callOtherClassMethod_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.encapsulation_callMethod);
             this.Controls.Add(this.btn05_callOtherClassMethod);
             this.Controls.Add(this.returnMethod);
             this.Controls.Add(this.method_area);
@@ -96,5 +109,6 @@
         private System.Windows.Forms.Button method_area;
         private System.Windows.Forms.Button returnMethod;
         private System.Windows.Forms.Button btn05_callOtherClassMethod;
+        private System.Windows.Forms.Button encapsulation_callMethod;
     }
 }

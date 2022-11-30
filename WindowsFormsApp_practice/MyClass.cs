@@ -21,5 +21,16 @@ namespace WindowsFormsApp_practice
         {
             MessageBox.Show("MyClass Method 3  (public method)");
         }
+        void method04()
+        {
+            MessageBox.Show("MyClass Method 4  (privagte method)");
+        }
+
+        public void method05()
+        {
+            MessageBox.Show("public method05 call private Method02");
+            method02();
+        }
+
     }
 }

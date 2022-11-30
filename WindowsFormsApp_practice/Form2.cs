@@ -57,10 +57,9 @@ namespace WindowsFormsApp_practice
         private void btn05_callOtherClassMethod_Click(object sender, EventArgs e)
         {
             MyClass mc= new MyClass();
-            mc.method01();
+            mc.method05();
             // private or default methods not allow to call
             // mc.method02();
-            mc.method03();
         }
     }
 }
