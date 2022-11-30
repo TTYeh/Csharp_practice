@@ -32,6 +32,7 @@
             this.TestEvent_btn = new System.Windows.Forms.Button();
             this.btn_register02 = new System.Windows.Forms.Button();
             this.cancel_register = new System.Windows.Forms.Button();
+            this.setName1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_register_event
@@ -72,11 +73,23 @@
             this.cancel_register.UseVisualStyleBackColor = true;
             this.cancel_register.Click += new System.EventHandler(this.cancel_register_Click);
             // 
+            // setName1
+            // 
+            this.setName1.Location = new System.Drawing.Point(436, 51);
+            this.setName1.Name = "setName1";
+            this.setName1.Size = new System.Drawing.Size(251, 47);
+            this.setName1.TabIndex = 3;
+            this.setName1.TabStop = false;
+            this.setName1.Text = "10_setProperty_name_1";
+            this.setName1.UseVisualStyleBackColor = true;
+            this.setName1.Click += new System.EventHandler(this.setName1_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.setName1);
             this.Controls.Add(this.cancel_register);
             this.Controls.Add(this.btn_register02);
             this.Controls.Add(this.TestEvent_btn);
@@ -93,5 +106,6 @@
         private System.Windows.Forms.Button TestEvent_btn;
         private System.Windows.Forms.Button btn_register02;
         private System.Windows.Forms.Button cancel_register;
+        private System.Windows.Forms.Button setName1;
     }
 }

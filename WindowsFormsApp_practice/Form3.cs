@@ -36,8 +36,20 @@ namespace WindowsFormsApp_practice
 
         private void cancel_register_Click(object sender, EventArgs e)
         {
+            // Point:delegate
             TestEvent_btn.Click -= new EventHandler(this.TestEvent_btn_Click);
             btn_register02.Click -= btn_register02_click;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void setName1_Click(object sender, EventArgs e)
+        {
+            btn_register_event.BackColor = Color.Beige;
+
         }
     }
 }
