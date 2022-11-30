@@ -14,5 +14,18 @@ namespace WindowsFormsApp_practice
         {
             MessageBox.Show("partial class method06");
         }
+
+        class MemberDemo
+        // Member是internal
+        {
+            // Name和Age是private
+            string Name;
+            int Age;
+        }
+        public class Member
+        {
+            public string Name;
+            public int Age;
+        }
     }
 }
