@@ -1,5 +1,5 @@
 # Csharp_practice
-Ispan lab
+
 ---11/29學習回顧---
 1. 物件導向和程式、編譯順序、nameSpace
 2. 常用視窗功能:classView, ObjectBrowser,文件大綱
@@ -7,3 +7,6 @@ Ispan lab
 4. 除錯燈泡與沒引入的誤進到classView搜索
 5. 建立方法(定義function)
 其他:基礎IT第五章
+
+---11/30學習回顧---
+1. add returnMethod
