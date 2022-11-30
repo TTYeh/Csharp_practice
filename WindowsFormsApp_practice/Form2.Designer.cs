@@ -32,6 +32,9 @@
             this.method_area = new System.Windows.Forms.Button();
             this.returnMethod = new System.Windows.Forms.Button();
             this.btn05_callOtherClassMethod = new System.Windows.Forms.Button();
+            this.encapsulation_callMethod = new System.Windows.Forms.Button();
+            this.partialClassBtn = new System.Windows.Forms.Button();
+            this.memberBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // openHelloForm
@@ -75,11 +78,47 @@
             this.btn05_callOtherClassMethod.UseVisualStyleBackColor = true;
             this.btn05_callOtherClassMethod.Click += new System.EventHandler(this.btn05_callOtherClassMethod_Click);
             // 
+            // encapsulation_callMethod
+            // 
+            this.encapsulation_callMethod.Location = new System.Drawing.Point(30, 280);
+            this.encapsulation_callMethod.Name = "encapsulation_callMethod";
+            this.encapsulation_callMethod.Size = new System.Drawing.Size(184, 40);
+            this.encapsulation_callMethod.TabIndex = 4;
+            this.encapsulation_callMethod.TabStop = false;
+            this.encapsulation_callMethod.Text = "封裝encapsulation";
+            this.encapsulation_callMethod.UseVisualStyleBackColor = true;
+            this.encapsulation_callMethod.Click += new System.EventHandler(this.btn05_callOtherClassMethod_Click);
+            // 
+            // partialClassBtn
+            // 
+            this.partialClassBtn.Location = new System.Drawing.Point(30, 337);
+            this.partialClassBtn.Name = "partialClassBtn";
+            this.partialClassBtn.Size = new System.Drawing.Size(184, 40);
+            this.partialClassBtn.TabIndex = 4;
+            this.partialClassBtn.TabStop = false;
+            this.partialClassBtn.Text = "partial class";
+            this.partialClassBtn.UseVisualStyleBackColor = true;
+            this.partialClassBtn.Click += new System.EventHandler(this.btn05_callOtherClassMethod_Click);
+            // 
+            // memberBtn
+            // 
+            this.memberBtn.Location = new System.Drawing.Point(280, 36);
+            this.memberBtn.Name = "memberBtn";
+            this.memberBtn.Size = new System.Drawing.Size(184, 40);
+            this.memberBtn.TabIndex = 5;
+            this.memberBtn.TabStop = false;
+            this.memberBtn.Text = "08_member";
+            this.memberBtn.UseVisualStyleBackColor = true;
+            this.memberBtn.Click += new System.EventHandler(this.memberBtn_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.memberBtn);
+            this.Controls.Add(this.partialClassBtn);
+            this.Controls.Add(this.encapsulation_callMethod);
             this.Controls.Add(this.btn05_callOtherClassMethod);
             this.Controls.Add(this.returnMethod);
             this.Controls.Add(this.method_area);
@@ -96,5 +135,8 @@
         private System.Windows.Forms.Button method_area;
         private System.Windows.Forms.Button returnMethod;
         private System.Windows.Forms.Button btn05_callOtherClassMethod;
+        private System.Windows.Forms.Button encapsulation_callMethod;
+        private System.Windows.Forms.Button partialClassBtn;
+        private System.Windows.Forms.Button memberBtn;
     }
 }

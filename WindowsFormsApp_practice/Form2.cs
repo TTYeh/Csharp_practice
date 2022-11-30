@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WindowsFormsApp_practice.MyClass;
 
 namespace WindowsFormsApp_practice
 {
@@ -57,10 +58,22 @@ namespace WindowsFormsApp_practice
         private void btn05_callOtherClassMethod_Click(object sender, EventArgs e)
         {
             MyClass mc= new MyClass();
-            mc.method01();
-            // private or default methods not allow to call
-            // mc.method02();
-            mc.method03();
+            mc.method06();
+        }
+
+        private void memberBtn_Click(object sender, EventArgs e)
+        {
+            Member mem1 = new Member();
+            mem1.Name = "John";
+            mem1.Age = 40;
+            MessageBox.Show("member1:姓名" + mem1.Name + "年齡" + mem1.Age);
+
+            Member mem2 = new Member()
+            {
+                Name = "Nintendo Switch",
+                Age = 10
+            };
+            MessageBox.Show("member2:姓名" + mem1.Name + "年齡" + mem1.Age);
         }
     }
 }

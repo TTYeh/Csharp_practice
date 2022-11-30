@@ -22,3 +22,4 @@ C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsAp
 C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\02_WindowsFormsApp_practice.csproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.exe
 C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.pdb
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.Form3.resources
