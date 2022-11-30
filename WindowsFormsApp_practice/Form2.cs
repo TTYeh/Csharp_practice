@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WindowsFormsApp_practice.MyClass;
 
 namespace WindowsFormsApp_practice
 {
@@ -58,6 +59,15 @@ namespace WindowsFormsApp_practice
         {
             MyClass mc= new MyClass();
             mc.method06();
+        }
+
+        private void memberBtn_Click(object sender, EventArgs e)
+        {
+            Member mem1 = new Member();
+            mem1.Name = "John";
+            mem1.Age = 40;
+
+            MessageBox.Show("姓名" + mem1.Name + "年齡" + mem1.Age);
         }
     }
 }
