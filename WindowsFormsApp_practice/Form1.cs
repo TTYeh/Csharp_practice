@@ -31,10 +31,11 @@ namespace WindowsFormsApp_practice
         {
             //todo 未完成
             string Name = inputName.Text;
-            MessageBox.Show("Hello" + Name);
+            MessageBox.Show("Hello  " + Name);
             // 重點:類別的全名引入(using或加入參考)
             // 重點:有錯誤小燈泡可幫忙修正
-            System.Windows.Forms.MessageBox.Show("Hello類別的全名" + Name);
+            // Hello類別的全名後端測試
+            System.Windows.Forms.MessageBox.Show(" UtilityStaticNum: " +InstanceAndStatic.staticNumber);
 
         }
 

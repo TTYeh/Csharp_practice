@@ -45,5 +45,35 @@ namespace WindowsFormsApp_practice
 
             back_acc_disp.Text = result.ToString();
         }
+
+        InstanceAndStatic ins = new InstanceAndStatic();
+        private void InstanceVar_btn_Click(object sender, EventArgs e)
+        {
+            // 18.跨類別共同引入公用類別的Static變數 (Instance不會保留在記憶體共用)
+            ins.instanceNumber += 2;
+            Instance_label.Text = "Instance Count:  " + ins.instanceNumber;
+        }
+
+        private void staticVar_btn_Click(object sender, EventArgs e)
+        {
+            // 18.跨類別共同引入公用類別的Static變數 (Instance不會保留在記憶體共用)
+            InstanceAndStatic.staticNumber += 2;
+            static_label.Text = "Static Count:  " + InstanceAndStatic.staticNumber;
+
+        }
+
+        private void localVariable_Click(object sender, EventArgs e)
+        {
+            // 17.同區域可以存區域變數，同類別可以存類別變數
+            // 18.跨類別共同引入公用類別的Static變數 (Instance不會保留在記憶體共用)
+        }
+
+
+        private void HelloFormCallStaticVar_Click(object sender, EventArgs e)
+        {
+            // 18.跨類別共同引入公用類別的Static變數 (Instance不會保留在記憶體共用)
+            Form1 frm = new Form1();
+            frm.Show();
+        }
     }
 }
