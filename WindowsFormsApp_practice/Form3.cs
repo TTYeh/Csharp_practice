@@ -51,5 +51,39 @@ namespace WindowsFormsApp_practice
             btn_register_event.BackColor = Color.Beige;
 
         }
+
+        private void getProperty_Click(object sender, EventArgs e)
+        {
+            string strRegister = getProperty.Text;
+            MessageBox.Show(strRegister);
+        }
+
+        private void setBound_Click(object sender, EventArgs e)
+        {
+            setBound.SetBounds(100,100,100,100);
+        }
+
+        private void msgboxApp_Click(object sender, EventArgs e)
+        {
+            // Point:由show看定義，知道是DialogResult這個元件接show的回傳資料
+            /*
+            DialogResult result = MessageBox.Show("請問是中共同路人?", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Question,
+                MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            */
+            DialogResult result = MessageBox.Show("請問是中共同路人?", "警告", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("Yes");
+            }
+            else
+            {
+                MessageBox.Show("NO");            
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
