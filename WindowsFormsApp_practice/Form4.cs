@@ -16,7 +16,7 @@ namespace WindowsFormsApp_practice
         {
             InitializeComponent();
         }
-        int result = 0;
+        int count = 0;
         private void Form4_Load(object sender, EventArgs e)
         {
 
@@ -24,8 +24,26 @@ namespace WindowsFormsApp_practice
 
         private void button1_Click(object sender, EventArgs e)
         {
-            result += 1;
-            display4add.Text = result.ToString();
+            count += 1;
+            display4add.Text = count.ToString();
+        }
+
+        private void front_acc_add_btn_Click(object sender, EventArgs e)
+        {
+            int result = ++count;
+            // count += 1
+            // int result = count
+
+            front_acc_disp.Text = result.ToString();
+        }
+
+        private void back_acc_add_btn_Click(object sender, EventArgs e)
+        {
+            int result = count++;
+            // int result = count
+            // count += 1
+
+            back_acc_disp.Text = result.ToString();
         }
     }
 }
