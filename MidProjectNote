@@ -1,0 +1,25 @@
+公文簽核管理系統
+
+---硬體---
+barcode 產生(案件編碼、狀態碼(inital,pending,finish,reject)、刷日期(月、日、十位數、個位數))
+---DB---
+user使用者(id, userName,eamil,password,phone,userBirthday, createTime, updateTime)
+authority權限(id, 買方user.id,賣方user.id,permission(customer,administrator, engineer, operator), createTime, updateTime )
+workOrder工單(id(barCodeId),itemId,customerId ,operatorId,status,statusDetail(通過狀態+人+評語),timeStart_1,timeEnd_1,PictureId,itemId,remark, createTime, updateTime)
+item公文資料表(Id, Category,description, remark, createTime, updateTime)
+
+---功能---
+(彈窗)登入註冊功能SESSION與$_COOKIES+霧化管理
+(上方)後臺權限管理(使用者增刪改查+權限調整)
+(首頁)布局(工單查詢:日期、人、類別)+ 統計整理(群體或個人即將到期,已經到期,取消認可通知)+漂亮動畫
+(側面)新增工單(刷barCode進入輸入訊息頁面)
+(側面)工單Info(螢幕小日曆設定日期、認可通過、退單)
+(側面)工單細項進度(含上傳圖片)
+(後端)alartCal(id, p)
+(後端)reportGenerator
+(後端)LineNotify
+
+---其他---
+(後端)多國語言
+(後端)系統log 錯誤log
+DisignParren強化
