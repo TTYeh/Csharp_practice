@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_WindowsFormsApp_practice", "WindowsFormsApp_practice\02_WindowsFormsApp_practice.csproj", "{CE9490C8-FFB9-4EE9-B7B2-0B7E84C94C6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab_Console", "Lab_Console\Lab_Console.csproj", "{7546364D-5D03-4B2F-9BC7-A4AA2C4192D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Lab_Console", "Lab_Console\01_Lab_Console.csproj", "{7546364D-5D03-4B2F-9BC7-A4AA2C4192D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
