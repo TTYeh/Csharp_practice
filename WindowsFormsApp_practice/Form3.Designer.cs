@@ -122,7 +122,7 @@
             // 
             // label_icontest
             // 
-            this.label_icontest.Location = new System.Drawing.Point(730, 41);
+            this.label_icontest.Location = new System.Drawing.Point(716, 41);
             this.label_icontest.Name = "label_icontest";
             this.label_icontest.Size = new System.Drawing.Size(215, 66);
             this.label_icontest.TabIndex = 7;
@@ -132,7 +132,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.textBox1.Location = new System.Drawing.Point(733, 134);
+            this.textBox1.Location = new System.Drawing.Point(719, 134);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
