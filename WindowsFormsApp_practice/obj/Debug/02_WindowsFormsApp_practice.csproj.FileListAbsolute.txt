@@ -23,3 +23,4 @@ C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsAp
 C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.exe
 C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.pdb
 C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.Form3.resources
+C:\Users\User\Desktop\cSharp_practice\project\lab_Csharp_practice\WindowsFormsApp_practice\obj\Debug\WindowsFormsApp_practice.Form4.resources

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static WindowsFormsApp_practice.MyClass;
+using static WindowsFormsApp_practice.Utility;
 
 namespace WindowsFormsApp_practice
 {
@@ -57,7 +57,7 @@ namespace WindowsFormsApp_practice
 
         private void btn05_callOtherClassMethod_Click(object sender, EventArgs e)
         {
-            MyClass mc= new MyClass();
+            Utility mc= new Utility();
             mc.method06();
         }
 
