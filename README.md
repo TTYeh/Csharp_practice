@@ -20,6 +20,8 @@
 1. 變數、基本控制項、屬性方法
 2. 前置後置遞增運算
 TODO:decimal的blog
+3. 區域變數vs類別變數
+4. Instance vs static + 執行個體變數
 
 
 
