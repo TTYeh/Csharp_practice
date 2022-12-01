@@ -18,6 +18,7 @@ item公文資料表(Id, Category,description, remark, createTime, updateTime)
 (後端)alartCal(id, p)
 (後端)reportGenerator
 (後端)LineNotify
+(後端)Email通知
 
 ---其他---
 (後端)多國語言
