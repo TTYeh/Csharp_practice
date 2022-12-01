@@ -14,6 +14,8 @@
 3. partial class
 4. change property
 5. delegate委派 & 註冊事件
+
+
 ---12/1學習回顧---
 1. 變數、基本控制項、屬性方法
 2. 前置後置遞增運算
