@@ -75,5 +75,54 @@ namespace WindowsFormsApp_practice
             Form1 frm = new Form1();
             frm.Show();
         }
+
+        private void callByVal_btn_Click(object sender, EventArgs e)
+        {
+            int A=10, B=20;
+            MessageBox.Show("A: " + A + ", B: " + B);
+            int C = B;
+            B = 30;
+            MessageBox.Show("A: " + A + ", B: " + B + ", C: " + C);
+        }
+        public class callByRef_ClassA
+        {
+            public int refNumber;
+        }
+        public class callByRef_ClassB
+        {
+            public int refNumber;
+        }
+        public class callByRef_ClassC
+        {
+            public int refNumber;
+        }
+
+        private void callByRef_btn_Click(object sender, EventArgs e)
+        {
+            callByRef_ClassA cbf_A = new callByRef_ClassA();
+            callByRef_ClassB cbf_B = new callByRef_ClassB();
+            cbf_A.refNumber = 10;
+            cbf_B.refNumber = 20;
+            
+
+            MessageBox.Show("A: " + cbf_A.refNumber + ", B: " + cbf_B.refNumber);
+            callByRef_ClassB C = cbf_B;
+            cbf_B.refNumber = 30;
+            MessageBox.Show("A: " + cbf_A.refNumber + ", B: " + cbf_B.refNumber + ", C: " + C.refNumber);
+        }
+
+        private void callByRef_btn2_Click(object sender, EventArgs e)
+        {
+            TextBox tb = textBox1;
+            tb.Text = "Reference Type";
+            tb.BackColor = Color.DarkGoldenrod;
+            tb.ForeColor = Color.Honeydew;
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

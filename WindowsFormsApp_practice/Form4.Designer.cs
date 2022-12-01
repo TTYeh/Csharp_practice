@@ -47,6 +47,10 @@
             this.Instance_label = new System.Windows.Forms.Label();
             this.static_label = new System.Windows.Forms.Label();
             this.HelloFormCallStaticVar = new System.Windows.Forms.Button();
+            this.callByVal_btn = new System.Windows.Forms.Button();
+            this.callByRef_btn = new System.Windows.Forms.Button();
+            this.callByRef_btn2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -228,11 +232,56 @@
             this.HelloFormCallStaticVar.UseVisualStyleBackColor = true;
             this.HelloFormCallStaticVar.Click += new System.EventHandler(this.HelloFormCallStaticVar_Click);
             // 
+            // callByVal_btn
+            // 
+            this.callByVal_btn.Location = new System.Drawing.Point(551, 72);
+            this.callByVal_btn.Name = "callByVal_btn";
+            this.callByVal_btn.Size = new System.Drawing.Size(141, 41);
+            this.callByVal_btn.TabIndex = 7;
+            this.callByVal_btn.Text = "19_callByVal";
+            this.callByVal_btn.UseVisualStyleBackColor = true;
+            this.callByVal_btn.Click += new System.EventHandler(this.callByVal_btn_Click);
+            // 
+            // callByRef_btn
+            // 
+            this.callByRef_btn.Location = new System.Drawing.Point(551, 130);
+            this.callByRef_btn.Name = "callByRef_btn";
+            this.callByRef_btn.Size = new System.Drawing.Size(141, 41);
+            this.callByRef_btn.TabIndex = 8;
+            this.callByRef_btn.TabStop = false;
+            this.callByRef_btn.Text = "20_callByRef";
+            this.callByRef_btn.UseVisualStyleBackColor = true;
+            this.callByRef_btn.Click += new System.EventHandler(this.callByRef_btn_Click);
+            // 
+            // callByRef_btn2
+            // 
+            this.callByRef_btn2.Location = new System.Drawing.Point(551, 282);
+            this.callByRef_btn2.Name = "callByRef_btn2";
+            this.callByRef_btn2.Size = new System.Drawing.Size(141, 41);
+            this.callByRef_btn2.TabIndex = 9;
+            this.callByRef_btn2.TabStop = false;
+            this.callByRef_btn2.Text = "20_1_callByRef";
+            this.callByRef_btn2.UseVisualStyleBackColor = true;
+            this.callByRef_btn2.Click += new System.EventHandler(this.callByRef_btn2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.AcceptsReturn = true;
+            this.textBox1.Location = new System.Drawing.Point(551, 236);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(141, 25);
+            this.textBox1.TabIndex = 10;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.callByRef_btn2);
+            this.Controls.Add(this.callByRef_btn);
+            this.Controls.Add(this.callByVal_btn);
             this.Controls.Add(this.HelloFormCallStaticVar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -250,6 +299,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -274,5 +324,9 @@
         private System.Windows.Forms.Label Instance_label;
         private System.Windows.Forms.Label static_label;
         private System.Windows.Forms.Button HelloFormCallStaticVar;
+        private System.Windows.Forms.Button callByVal_btn;
+        private System.Windows.Forms.Button callByRef_btn;
+        private System.Windows.Forms.Button callByRef_btn2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
