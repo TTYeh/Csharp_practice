@@ -24,4 +24,21 @@ TODO:decimal的blog
 4. Instance vs static + 執行個體變數
 5. callByRef vs CallByVal
 
+---12/2學習回顧---
+資料庫
+
+資料結構: 如何組織、如何存取access
+queue:管子 FIFO LILO
+stack(堆疊區):桶子FILO、LIFO
+
+storage:RAM vs HDD
+小資料系統用fileSystem，大的用資料庫
+
+資料data是甚麼?
+1.真實世界:老師、學生
+2.結構敘述(schema):(學生的重要特徵)學生ID,名子,生日...
+3.實體(Instance):(現有的資料)10503314,Jack,1991/1/1
+
+
+
 
