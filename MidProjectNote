@@ -1,7 +1,7 @@
 公文簽核管理系統
 
 ---硬體---
-barcode 產生(案件編碼、狀態碼(inital,pending,finish,reject)、刷日期(月、日、十位數、個位數))
+用手機掃圖片，傳給line，(案件編碼、狀態碼(inital,pending,finish,reject)、刷日期(月、日、十位數、個位數))
 ---DB---
 user使用者(id, userName,eamil,password,phone,userBirthday, createTime, updateTime)
 authority權限(id, 買方user.id,賣方user.id,permission(customer,administrator, engineer, operator), createTime, updateTime )
