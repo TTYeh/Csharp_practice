@@ -9,7 +9,7 @@ using Image = System.Drawing.Image;
 
 namespace HW_MyHomework
 {
-    partial class Hello_01
+    partial class hw01_Hello
     {
         /// <summary>
         /// Required designer variable.
@@ -35,6 +35,32 @@ namespace HW_MyHomework
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        private void SetMyButtonIcon(Button btnRef)
+        {
+            // Assign an image to the button.
+            // TODO  看不懂 https://stackoverflow.com/questions/11483655/icon-inside-of-button
+            // https://learn.microsoft.com/zh-tw/dotnet/api/system.drawing.image.fromfile?view=dotnet-plat-ext-7.0
+            // 自動調整大小?
+            btnRef.BackgroundImageLayout = ImageLayout.Stretch;
+
+            string projectCurPath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(
+             Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory))));
+            // btn_hi.Image = Image.FromFile("C:\\Users\\User\\Desktop\\cSharp_practice\\project\\lab_Csharp_practice\\source\\image_hw\\play.jpg");
+
+            try
+            {
+                btnRef.Image = Image.FromFile(projectCurPath + "\\source\\image_hw\\play2.png");
+                // Align the image and text on the button.
+                btnRef.ImageAlign = ContentAlignment.MiddleLeft;
+                btnRef.TextAlign = ContentAlignment.MiddleRight;
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                MessageBox.Show("There was an error opening the bitmap." +
+                    "Please check the path.");
+            }
+
+        }
         private void InitializeComponent()
         {
             this.btn_hi = new System.Windows.Forms.Button();
@@ -47,6 +73,7 @@ namespace HW_MyHomework
             this.inputSex = new System.Windows.Forms.TextBox();
             this.inputStarsignlabel = new System.Windows.Forms.Label();
             this.inputStarsign = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_hi
@@ -58,7 +85,6 @@ namespace HW_MyHomework
             this.btn_hi.Text = "say Hi!";
             this.btn_hi.UseVisualStyleBackColor = true;
             this.btn_hi.Click += new System.EventHandler(this.button1_Click);
-            this.SetMyButtonIcon(btn_hi);
             // 
             // btn_hello
             // 
@@ -69,7 +95,6 @@ namespace HW_MyHomework
             this.btn_hello.Text = "say Hello";
             this.btn_hello.UseVisualStyleBackColor = true;
             this.btn_hello.Click += new System.EventHandler(this.button2_Click);
-            this.SetMyButtonIcon(btn_hello);
             // 
             // inputName
             // 
@@ -87,8 +112,8 @@ namespace HW_MyHomework
             // inputNamelabel
             // 
             this.inputNamelabel.AllowDrop = true;
-            this.inputNamelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.inputNamelabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.inputNamelabel.AutoEllipsis = true;
             this.inputNamelabel.BackColor = System.Drawing.Color.Transparent;
@@ -103,8 +128,8 @@ namespace HW_MyHomework
             // inputEngNamelebal
             // 
             this.inputEngNamelebal.AllowDrop = true;
-            this.inputEngNamelebal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.inputEngNamelebal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.inputEngNamelebal.AutoEllipsis = true;
             this.inputEngNamelebal.BackColor = System.Drawing.Color.Transparent;
@@ -133,8 +158,8 @@ namespace HW_MyHomework
             // inputSexlabel
             // 
             this.inputSexlabel.AllowDrop = true;
-            this.inputSexlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.inputSexlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.inputSexlabel.AutoEllipsis = true;
             this.inputSexlabel.BackColor = System.Drawing.Color.Transparent;
@@ -163,8 +188,8 @@ namespace HW_MyHomework
             // inputStarsignlabel
             // 
             this.inputStarsignlabel.AllowDrop = true;
-            this.inputStarsignlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.inputStarsignlabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.inputStarsignlabel.AutoEllipsis = true;
             this.inputStarsignlabel.BackColor = System.Drawing.Color.Transparent;
@@ -189,12 +214,15 @@ namespace HW_MyHomework
             this.inputStarsign.Size = new System.Drawing.Size(140, 40);
             this.inputStarsign.TabIndex = 8;
             // 
-            // Hello_01
+
+            // 
+            // hw01_Hello
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HW_MyHomework.Properties.Resources.pimon;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.inputStarsignlabel);
             this.Controls.Add(this.inputStarsign);
             this.Controls.Add(this.inputSexlabel);
@@ -205,8 +233,8 @@ namespace HW_MyHomework
             this.Controls.Add(this.inputName);
             this.Controls.Add(this.btn_hello);
             this.Controls.Add(this.btn_hi);
-            this.Name = "Hello_01";
-            this.Text = "Form1";
+            this.Name = "hw01_Hello";
+            this.Text = "你好!c#";
             this.Load += new System.EventHandler(this.Hello_01_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -225,36 +253,6 @@ namespace HW_MyHomework
         private System.Windows.Forms.TextBox inputSex;
         private System.Windows.Forms.Label inputStarsignlabel;
         private System.Windows.Forms.TextBox inputStarsign;
-
-        private void SetMyButtonIcon(Button btnRef)
-        {
-            // Assign an image to the button.
-            // TODO  看不懂 https://stackoverflow.com/questions/11483655/icon-inside-of-button
-            // https://learn.microsoft.com/zh-tw/dotnet/api/system.drawing.image.fromfile?view=dotnet-plat-ext-7.0
-            // 自動調整大小?
-            btnRef.BackgroundImageLayout = ImageLayout.Stretch;
-
-            string projectCurPath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(
-             Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory))));
-            // btn_hi.Image = Image.FromFile("C:\\Users\\User\\Desktop\\cSharp_practice\\project\\lab_Csharp_practice\\source\\image_hw\\play.jpg");
-           
-            try
-            {
-                btnRef.Image = Image.FromFile(projectCurPath + "\\source\\image_hw\\play2.png");
-                // Align the image and text on the button.
-                btnRef.ImageAlign = ContentAlignment.MiddleLeft;
-                btnRef.TextAlign = ContentAlignment.MiddleRight;
-            }
-            catch (System.IO.FileNotFoundException)
-            {
-                MessageBox.Show("There was an error opening the bitmap." +
-                    "Please check the path.");
-            }
-            
-        }
-        public enum TextImageRelation {
-
-        }
-        
+        private Label label1;
     }
 }

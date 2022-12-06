@@ -105,13 +105,14 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.BackgroundImage = global::HW_MyHomework.Properties.Resources.nasida;
-            this.splitContainer1.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.splitContainer1.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.splitContainer1.Panel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.splitContainer1.Panel2.ForeColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.ImeMode = System.Windows.Forms.ImeMode.On;
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint_1);
-            this.splitContainer1.Size = new System.Drawing.Size(1229, 437);
+            this.splitContainer1.Size = new System.Drawing.Size(1229, 484);
             this.splitContainer1.SplitterDistance = 409;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -282,7 +283,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1232, 556);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1229, 556);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

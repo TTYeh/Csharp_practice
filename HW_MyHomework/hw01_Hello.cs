@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HW_MyHomework
 {
-    public partial class Hello_01 : Form
+    public partial class hw01_Hello : Form
     {
-        public Hello_01()
+        public hw01_Hello()
         {
             InitializeComponent();
         }
@@ -74,6 +74,16 @@ namespace HW_MyHomework
         }
 
         private void inputStarsignlabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Move(object sender, EventArgs e)
+        {
+            label1.Text = this.Location.X + "," + this.Location.Y; 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -39,15 +39,24 @@ namespace HW_MyHomework
 
         private void btn_hello_Click(object sender, EventArgs e)
         {
-            Hello_01 helloForm = new Hello_01();
-            helloForm.StartPosition = FormStartPosition.CenterScreen;
+            hw01_Hello helloForm = new hw01_Hello();
+            int windowTop = this.panel1.Location.Y + splitContainer1.Size.Height;
+            int windowLeft = this.panel1.Location.X + splitContainer1.Size.Width;
+            // MessageBox.Show(Convert.ToString(windowTop) +","+ Convert.ToString(windowLeft));
+            helloForm.StartPosition = FormStartPosition.Manual;
+            helloForm.Left = 390;
+            helloForm.Top = 202;
+            // helloForm.StartPosition = FormStartPosition.CenterScreen;
             helloForm.Show();
+            
         }
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-
-
+            /*
+            mainForm myMainForm = new mainForm();
+            mainForm.StartPosition = FormStartPosition.CenterScreen;
+            */
         }
     }
 }
