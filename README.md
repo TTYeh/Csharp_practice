@@ -28,3 +28,14 @@ TODO:decimal的blog
 --- SQL Server
 https://hackmd.io/0e0kY-iFRKSJK7rAh_2Z8A?both
 
+問題整理:
+1. HW1無法調整按鈕新增三角形的圖案
+2. Main的表單會切到圖片，icon也是
+3. 點到元件叫出空的參考，可以自動整理刪掉嗎?
+4. 執行到一半看屬性值 例如size
+5. TODO相對位置不會設定
+
+
+
+
+
