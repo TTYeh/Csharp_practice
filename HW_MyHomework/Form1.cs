@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HW_MyHomework
 {
-    public partial class Form1 : Form
+    public partial class hw02_Loan : Form
     {
-        public Form1()
+        public hw02_Loan()
         {
             InitializeComponent();
         }
