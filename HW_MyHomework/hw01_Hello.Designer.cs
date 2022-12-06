@@ -85,6 +85,7 @@ namespace HW_MyHomework
             this.btn_hi.Text = "say Hi!";
             this.btn_hi.UseVisualStyleBackColor = true;
             this.btn_hi.Click += new System.EventHandler(this.button1_Click);
+            SetMyButtonIcon(btn_hi);
             // 
             // btn_hello
             // 
@@ -95,6 +96,7 @@ namespace HW_MyHomework
             this.btn_hello.Text = "say Hello";
             this.btn_hello.UseVisualStyleBackColor = true;
             this.btn_hello.Click += new System.EventHandler(this.button2_Click);
+            SetMyButtonIcon(btn_hello);
             // 
             // inputName
             // 
