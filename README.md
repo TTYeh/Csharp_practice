@@ -1,5 +1,8 @@
 # Csharp_practice
 
+--- SQL Server---
+https://hackmd.io/0e0kY-iFRKSJK7rAh_2Z8A?both
+
 ---11/29學習回顧---
 1. 物件導向和程式、編譯順序、nameSpace
 2. 常用視窗功能:classView, ObjectBrowser,文件大綱
@@ -24,36 +27,13 @@ TODO:decimal的blog
 4. Instance vs static + 執行個體變數
 5. callByRef vs CallByVal
 
-<<<<<<< HEAD
-
---- SQL Server
-https://hackmd.io/0e0kY-iFRKSJK7rAh_2Z8A?both
-=======
----12/2學習回顧---
-資料庫
-
-資料結構: 如何組織、如何存取access
-queue:管子 FIFO LILO
-stack(堆疊區):桶子FILO、LIFO
-
-storage:RAM vs HDD
-小資料系統用fileSystem，大的用資料庫
-
-資料data是甚麼?
-1.真實世界:老師、學生
-2.結構敘述(schema):(學生的重要特徵)學生ID,名子,生日...
-3.實體(Instance):(現有的資料)10503314,Jack,1991/1/1
-
-
-
->>>>>>> update gitigore
 
 問題整理:
 1. HW1無法調整按鈕新增三角形的圖案
 2. Main的表單會切到圖片，icon也是
 3. 點到元件叫出空的參考，可以自動整理刪掉嗎?
 4. 執行到一半看屬性值 例如size
-5. TODO相對位置不會設定
+5. TODO兩個表單的相對位置不會設定hw1與main
 
 
 
