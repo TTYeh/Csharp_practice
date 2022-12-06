@@ -44,8 +44,8 @@ namespace HW_MyHomework
             int windowLeft = this.panel1.Location.X + splitContainer1.Size.Width;
             // MessageBox.Show(Convert.ToString(windowTop) +","+ Convert.ToString(windowLeft));
             helloForm.StartPosition = FormStartPosition.Manual;
-            helloForm.Left = 390;
-            helloForm.Top = 202;
+            helloForm.Left = 310;
+            helloForm.Top = 120;
             // helloForm.StartPosition = FormStartPosition.CenterScreen;
             helloForm.Show();
             

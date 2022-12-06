@@ -1,4 +1,6 @@
-﻿namespace HW_MyHomework
+﻿using System.Windows.Forms;
+
+namespace HW_MyHomework
 {
     partial class mainForm
     {
@@ -284,12 +286,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1229, 556);
+            this.ClientSize = new System.Drawing.Size(1229, 700);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "mainForm";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
