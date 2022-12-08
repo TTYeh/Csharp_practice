@@ -24,3 +24,11 @@ item公文資料表(Id, Category,description, remark, createTime, updateTime)
 (後端)多國語言
 (後端)系統log 錯誤log
 DisignParren強化
+
+---網頁--
+RWD、azureDev(CICD)、(azure Authentication?)
+We、azure、Microservice
+
+---看不見的---
+caching, design pattern
+
