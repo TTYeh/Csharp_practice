@@ -35,7 +35,13 @@ TODO:decimal的blog
 4. 執行到一半看屬性值 例如size
 5. TODO兩個表單的相對位置不會設定hw1與main
 
-
-
+hw2
+    public partial class hw02_Loan : Form
+    {
+        public hw02_Loan()
+        {
+            InitializeComponent();
+        }
+        // 定義變數為何無法定義在這裡?
 
 
