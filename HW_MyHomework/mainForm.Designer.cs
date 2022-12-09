@@ -270,6 +270,7 @@ namespace HW_MyHomework
             this.btn_Loan.TabIndex = 0;
             this.btn_Loan.Text = "02_Loan";
             this.btn_Loan.UseVisualStyleBackColor = true;
+            this.btn_Loan.Click += new System.EventHandler(this.btn_Loan_Click);
             // 
             // btn_hello
             // 
