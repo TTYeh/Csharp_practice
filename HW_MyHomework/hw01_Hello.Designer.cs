@@ -257,4 +257,8 @@ namespace HW_MyHomework
         private System.Windows.Forms.TextBox inputStarsign;
         private Label label1;
     }
+
+    partial class hw02_Loan { 
+
+    }
 }

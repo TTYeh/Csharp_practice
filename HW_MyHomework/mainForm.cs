@@ -58,5 +58,16 @@ namespace HW_MyHomework
             mainForm.StartPosition = FormStartPosition.CenterScreen;
             */
         }
+
+        private void btn_Loan_Click(object sender, EventArgs e)
+        {
+            // note: c#笨，要先new元件出來再用他的資料格式接，先打資料格式出來會抓不到
+            hw02_Loan loanForm = new hw02_Loan();
+            loanForm.StartPosition = FormStartPosition.Manual;
+            loanForm.Left = 310;
+            loanForm.Top = 120;
+            // helloForm.StartPosition = FormStartPosition.CenterScreen;
+            loanForm.Show();
+        }
     }
 }

@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="hw02_LoanReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="hw02_LoanReport.Designer.cs">
+      <DependentUpon>hw02_LoanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw02_LoanMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw02_LoanMain.Designer.cs">
+      <DependentUpon>hw02_LoanMain.cs</DependentUpon>
     </Compile>
     <Compile Include="hw01_Hello.cs">
       <SubType>Form</SubType>
@@ -66,11 +72,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="hw02_LoanMain.resx">
+      <DependentUpon>hw02_LoanMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hw01_Hello.resx">
       <DependentUpon>hw01_Hello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw02_LoanReport.resx">
+      <DependentUpon>hw02_LoanReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
