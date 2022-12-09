@@ -20,6 +20,9 @@ item公文資料表(Id, Category,description, remark, createTime, updateTime)
 (後端)LineNotify
 (後端)Email通知
 
+介面與功能編排可參考:
+可參考https://www.slideserve.com/harper-mckay/6165216
+
 ---其他---
 (後端)多國語言
 (後端)系統log 錯誤log
