@@ -36,6 +36,7 @@
             this.btnValid = new System.Windows.Forms.Button();
             this.btnProduct = new System.Windows.Forms.Button();
             this.btnValidConst = new System.Windows.Forms.Button();
+            this.btnValidEnum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_refAsParas
@@ -118,11 +119,22 @@
             this.btnValidConst.UseVisualStyleBackColor = true;
             this.btnValidConst.Click += new System.EventHandler(this.btnValidConst_Click);
             // 
+            // btnValidEnum
+            // 
+            this.btnValidEnum.Location = new System.Drawing.Point(258, 180);
+            this.btnValidEnum.Name = "btnValidEnum";
+            this.btnValidEnum.Size = new System.Drawing.Size(169, 63);
+            this.btnValidEnum.TabIndex = 8;
+            this.btnValidEnum.Text = "26_驗證身分_enum";
+            this.btnValidEnum.UseVisualStyleBackColor = true;
+            this.btnValidEnum.Click += new System.EventHandler(this.btnValidEnum_Click);
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(996, 495);
+            this.Controls.Add(this.btnValidEnum);
             this.Controls.Add(this.btnValidConst);
             this.Controls.Add(this.btnProduct);
             this.Controls.Add(this.btnValid);
@@ -148,5 +160,6 @@
         private System.Windows.Forms.Button btnValid;
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Button btnValidConst;
+        private System.Windows.Forms.Button btnValidEnum;
     }
 }

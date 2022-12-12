@@ -34,7 +34,7 @@ namespace HW_MyHomework
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.button18 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btn_Exam_guessNub = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -92,7 +92,7 @@ namespace HW_MyHomework
             // 
             this.splitContainer1.Panel1.AutoScrollMargin = new System.Drawing.Size(100, 0);
             this.splitContainer1.Panel1.Controls.Add(this.button18);
-            this.splitContainer1.Panel1.Controls.Add(this.button16);
+            this.splitContainer1.Panel1.Controls.Add(this.btn_Exam_guessNub);
             this.splitContainer1.Panel1.Controls.Add(this.button14);
             this.splitContainer1.Panel1.Controls.Add(this.button12);
             this.splitContainer1.Panel1.Controls.Add(this.button10);
@@ -133,14 +133,14 @@ namespace HW_MyHomework
             this.button18.Text = "button1";
             this.button18.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // btn_Exam_guessNub
             // 
-            this.button16.Location = new System.Drawing.Point(252, 329);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(155, 40);
-            this.button16.TabIndex = 0;
-            this.button16.Text = "button1";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btn_Exam_guessNub.Location = new System.Drawing.Point(252, 329);
+            this.btn_Exam_guessNub.Name = "btn_Exam_guessNub";
+            this.btn_Exam_guessNub.Size = new System.Drawing.Size(155, 40);
+            this.btn_Exam_guessNub.TabIndex = 0;
+            this.btn_Exam_guessNub.Text = "GuessNumber";
+            this.btn_Exam_guessNub.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
@@ -316,7 +316,7 @@ namespace HW_MyHomework
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btn_Exam_guessNub;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button10;

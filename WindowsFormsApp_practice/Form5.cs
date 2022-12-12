@@ -119,5 +119,28 @@ namespace WindowsFormsApp_practice
             }
 
         }
+        private enum UserRole
+        {
+            Admin = 1,
+            user1 = 2,
+            engineer = 3,
+        }
+
+        private void btnValidEnum_Click(object sender, EventArgs e)
+        {
+            UserRole role = UserRole.Admin;
+            if (role == UserRole.Admin)
+            {
+                btnProduct.Enabled = true;
+            }
+            else if (role == UserRole.user1)
+            {
+                btnProduct.Enabled = false;
+            }
+            else {
+                btnProduct.Enabled = false;
+            }
+
+        }
     }
 }
