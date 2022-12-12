@@ -83,7 +83,6 @@
             this.Controls.Add(this.btnEnter);
             this.Name = "hw_E1_guessGuesser";
             this.Text = "Guess";
-            this.Load += new System.EventHandler(this.hw_E1_guessGuesser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

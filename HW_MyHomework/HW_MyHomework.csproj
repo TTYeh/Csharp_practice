@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Utility.cs" />
     <Compile Include="hw_E1_guessGuesser.cs">
       <SubType>Form</SubType>
     </Compile>

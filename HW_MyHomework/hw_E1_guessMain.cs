@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static HW_MyHomework.Utility;
 
 namespace HW_MyHomework
 {
@@ -16,8 +17,8 @@ namespace HW_MyHomework
         {
             InitializeComponent();
         }
-        // 定義變數
-        static int answer;
+        // 定義變數 改用utility
+        // static int answer;
 
 
         private void btnGuess_Click(object sender, EventArgs e)
@@ -27,20 +28,34 @@ namespace HW_MyHomework
         }
 
         private void btnShowAns_Click(object sender, EventArgs e)
-        {
+        {   
+            // 每次都要new一個才能用utility?有點麻煩???????
+            MessageBox.Show("正確的答案是: " + hw_E1_Utility.answer);
 
+            // 初始化answer &　main_label說明的值
+            initMainDisp();
+            // 委派再call一次 function ，委派的順序要再確認一下????第二次完全一樣?
+            // btnShowAns.Click += new EventHandler(this.hw_E1_guessMain_Load);
         }
 
-        
+
         private void hw_E1_guessMain_Load(object sender, EventArgs e)
         {
-            answer = new Random().Next(101);
-        }
-        public int returnAns() 
-        {
-            return answer;
+            // 初始化answer的值
+            initMainDisp();
         }
 
+        private void initMainDisp() {
+
+            hw_E1_Utility.answer = new Random().Next(101);
+            labelShowMsg.Text = "Please Select A Number Bwteen 1 TO 100";
+            // 委派結尾???
+            // btnShowAns.Click -= new EventHandler(this.hw_E1_guessMain_Load);
+        }
+        public void updateMainDisp()
+        {
+            labelShowMsg.Text = hw_E1_Utility.dispString;
+        }
         private void labelShowMsg_Click(object sender, EventArgs e)
         {
 
