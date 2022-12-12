@@ -16,11 +16,8 @@ namespace HW_MyHomework
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        // 定義變數
+        static int answer;
 
 
         private void btnGuess_Click(object sender, EventArgs e)
@@ -30,6 +27,21 @@ namespace HW_MyHomework
         }
 
         private void btnShowAns_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void hw_E1_guessMain_Load(object sender, EventArgs e)
+        {
+            answer = new Random().Next(101);
+        }
+        public int returnAns() 
+        {
+            return answer;
+        }
+
+        private void labelShowMsg_Click(object sender, EventArgs e)
         {
 
         }

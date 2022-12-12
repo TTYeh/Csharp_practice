@@ -70,5 +70,11 @@ namespace HW_MyHomework
             // helloForm.StartPosition = FormStartPosition.CenterScreen;
             loanForm.Show();
         }
+
+        private void btn_Exam_guessNub_Click(object sender, EventArgs e)
+        {
+            hw_E1_guessMain guessForm = new hw_E1_guessMain();
+            guessForm.Show();
+        }
     }
 }

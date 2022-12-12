@@ -159,5 +159,18 @@ namespace WindowsFormsApp_practice
                     break;
             }
         }
+        public struct product { 
+            public string Name;
+            public string Price;
+        }
+        static string myResult = "";
+        private void button2_Click(object sender, EventArgs e)
+        {
+            product pro;
+            pro.Name = inputProductName.Text;
+            pro.Price = inputPrice.Text;
+            myResult += $"名稱: {pro.Name}, 單價 {pro.Price} \n";
+            labelshow.Text = myResult;
+        }
     }
 }

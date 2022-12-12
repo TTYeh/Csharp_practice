@@ -41,6 +41,7 @@
             this.labelShowMsg.Size = new System.Drawing.Size(618, 127);
             this.labelShowMsg.TabIndex = 0;
             this.labelShowMsg.Text = "Please Select A Number Bwteen 1 TO 100";
+            this.labelShowMsg.Click += new System.EventHandler(this.labelShowMsg_Click);
             // 
             // btnGuess
             // 
@@ -74,14 +75,14 @@
             this.Controls.Add(this.labelShowMsg);
             this.Name = "hw_E1_guessMain";
             this.Text = "Form Guess Number";
+            this.Load += new System.EventHandler(this.hw_E1_guessMain_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelShowMsg;
         private System.Windows.Forms.Button btnGuess;
         private System.Windows.Forms.Button btnShowAns;
+        public System.Windows.Forms.Label labelShowMsg;
     }
 }

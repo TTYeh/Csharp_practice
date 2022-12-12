@@ -141,6 +141,7 @@ namespace HW_MyHomework
             this.btn_Exam_guessNub.TabIndex = 0;
             this.btn_Exam_guessNub.Text = "GuessNumber";
             this.btn_Exam_guessNub.UseVisualStyleBackColor = true;
+            this.btn_Exam_guessNub.Click += new System.EventHandler(this.btn_Exam_guessNub_Click);
             // 
             // button14
             // 

@@ -38,6 +38,12 @@
             this.btnValidConst = new System.Windows.Forms.Button();
             this.btnValidEnum = new System.Windows.Forms.Button();
             this.btnEnumCase = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.inputProductName = new System.Windows.Forms.TextBox();
+            this.inputPrice = new System.Windows.Forms.TextBox();
+            this.labelshow = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_refAsParas
@@ -140,11 +146,73 @@
             this.btnEnumCase.UseVisualStyleBackColor = true;
             this.btnEnumCase.Click += new System.EventHandler(this.btnEnumCase_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(602, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 30);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "產品:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Location = new System.Drawing.Point(602, 134);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 30);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "單價:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(607, 192);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 60);
+            this.button2.TabIndex = 12;
+            this.button2.Text = "27.addProduct";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // inputProductName
+            // 
+            this.inputProductName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
+            this.inputProductName.Location = new System.Drawing.Point(681, 85);
+            this.inputProductName.Multiline = true;
+            this.inputProductName.Name = "inputProductName";
+            this.inputProductName.Size = new System.Drawing.Size(162, 38);
+            this.inputProductName.TabIndex = 13;
+            // 
+            // inputPrice
+            // 
+            this.inputPrice.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
+            this.inputPrice.Location = new System.Drawing.Point(681, 129);
+            this.inputPrice.Multiline = true;
+            this.inputPrice.Name = "inputPrice";
+            this.inputPrice.Size = new System.Drawing.Size(162, 38);
+            this.inputPrice.TabIndex = 14;
+            // 
+            // labelshow
+            // 
+            this.labelshow.Location = new System.Drawing.Point(604, 273);
+            this.labelshow.Name = "labelshow";
+            this.labelshow.Size = new System.Drawing.Size(409, 172);
+            this.labelshow.TabIndex = 15;
+            this.labelshow.Text = "顯示產品字串";
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 495);
+            this.ClientSize = new System.Drawing.Size(1123, 495);
+            this.Controls.Add(this.labelshow);
+            this.Controls.Add(this.inputPrice);
+            this.Controls.Add(this.inputProductName);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEnumCase);
             this.Controls.Add(this.btnValidEnum);
             this.Controls.Add(this.btnValidConst);
@@ -159,6 +227,7 @@
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -174,5 +243,11 @@
         private System.Windows.Forms.Button btnValidConst;
         private System.Windows.Forms.Button btnValidEnum;
         private System.Windows.Forms.Button btnEnumCase;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox inputProductName;
+        private System.Windows.Forms.TextBox inputPrice;
+        private System.Windows.Forms.Label labelshow;
     }
 }
