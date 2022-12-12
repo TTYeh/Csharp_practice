@@ -44,6 +44,11 @@
             this.inputProductName = new System.Windows.Forms.TextBox();
             this.inputPrice = new System.Windows.Forms.TextBox();
             this.labelshow = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_refAsParas
@@ -150,7 +155,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(602, 93);
+            this.label1.Location = new System.Drawing.Point(25, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 30);
             this.label1.TabIndex = 10;
@@ -160,7 +165,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("新細明體", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label2.Location = new System.Drawing.Point(602, 134);
+            this.label2.Location = new System.Drawing.Point(25, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 30);
             this.label2.TabIndex = 11;
@@ -168,7 +173,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(607, 192);
+            this.button2.Location = new System.Drawing.Point(30, 128);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(123, 60);
             this.button2.TabIndex = 12;
@@ -179,7 +184,7 @@
             // inputProductName
             // 
             this.inputProductName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
-            this.inputProductName.Location = new System.Drawing.Point(681, 85);
+            this.inputProductName.Location = new System.Drawing.Point(104, 21);
             this.inputProductName.Multiline = true;
             this.inputProductName.Name = "inputProductName";
             this.inputProductName.Size = new System.Drawing.Size(162, 38);
@@ -188,7 +193,7 @@
             // inputPrice
             // 
             this.inputPrice.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.FileSystemDirectories;
-            this.inputPrice.Location = new System.Drawing.Point(681, 129);
+            this.inputPrice.Location = new System.Drawing.Point(104, 65);
             this.inputPrice.Multiline = true;
             this.inputPrice.Name = "inputPrice";
             this.inputPrice.Size = new System.Drawing.Size(162, 38);
@@ -196,23 +201,64 @@
             // 
             // labelshow
             // 
-            this.labelshow.Location = new System.Drawing.Point(604, 273);
+            this.labelshow.Location = new System.Drawing.Point(27, 200);
             this.labelshow.Name = "labelshow";
             this.labelshow.Size = new System.Drawing.Size(409, 172);
             this.labelshow.TabIndex = 15;
             this.labelshow.Text = "顯示產品字串";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(159, 128);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(151, 60);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "27.addProductUtility";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.labelshow);
+            this.panel1.Controls.Add(this.inputPrice);
+            this.panel1.Controls.Add(this.inputProductName);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(565, 64);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(478, 392);
+            this.panel1.TabIndex = 17;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(316, 128);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(151, 60);
+            this.button4.TabIndex = 17;
+            this.button4.Text = "27.addProductUtility2";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(316, 48);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(151, 60);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "27.addProductUtility2_tryParse";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1123, 495);
-            this.Controls.Add(this.labelshow);
-            this.Controls.Add(this.inputPrice);
-            this.Controls.Add(this.inputProductName);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEnumCase);
             this.Controls.Add(this.btnValidEnum);
             this.Controls.Add(this.btnValidConst);
@@ -226,8 +272,9 @@
             this.Name = "Form5";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -249,5 +296,9 @@
         private System.Windows.Forms.TextBox inputProductName;
         private System.Windows.Forms.TextBox inputPrice;
         private System.Windows.Forms.Label labelshow;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
     }
 }

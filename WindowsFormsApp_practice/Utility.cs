@@ -44,5 +44,22 @@ namespace WindowsFormsApp_practice
 
     }
 
+    public struct ProductUtility
+    { 
+        public string Name { get; set; }
+        public decimal Price { get; set; }
 
+    }
+
+    public struct ProductUtility2
+    {
+        public string Name { get; set; }
+        public decimal Price { get; set; }
+
+        public ProductUtility2(string PN, decimal PP)
+        { 
+            Name = PN;
+            Price = PP;
+        }
+    }
 }

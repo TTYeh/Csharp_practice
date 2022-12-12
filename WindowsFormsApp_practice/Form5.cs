@@ -172,5 +172,39 @@ namespace WindowsFormsApp_practice
             myResult += $"名稱: {pro.Name}, 單價 {pro.Price} \n";
             labelshow.Text = myResult;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ProductUtility pu= new ProductUtility();
+            pu.Name = inputProductName.Text;
+            pu.Price = Convert.ToDecimal(inputPrice.Text);
+            myResult += $"名稱: {pu.Name}, 單價 {pu.Price:C0} \n";
+            labelshow.Text = myResult;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ProductUtility2 pu2 = new ProductUtility2(inputProductName.Text, 
+                Convert.ToDecimal(inputPrice.Text));
+            myResult += $"名稱: {pu2.Name}, 單價 {pu2.Price:C0} \n";
+            labelshow.Text = myResult;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            decimal price = 0;
+            bool isNum= decimal.TryParse(inputPrice.Text, out price);
+            if (isNum)
+            {
+                ProductUtility2 pu2 = new ProductUtility2(inputProductName.Text,
+                    Convert.ToDecimal(inputPrice.Text));
+                myResult += $"名稱: {pu2.Name}, 單價 {pu2.Price:C0} \n";
+                labelshow.Text = myResult;
+            }
+            else 
+            {
+                MessageBox.Show("請在價格欄輸入正確的數字");
+            }
+        }
     }
 }
