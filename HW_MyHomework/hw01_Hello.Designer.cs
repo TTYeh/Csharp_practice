@@ -85,7 +85,6 @@ namespace HW_MyHomework
             this.inputName.Name = "inputName";
             this.inputName.Size = new System.Drawing.Size(140, 40);
             this.inputName.TabIndex = 2;
-            this.inputName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // inputNamelabel
             // 
@@ -118,7 +117,6 @@ namespace HW_MyHomework
             this.inputEngNamelebal.TabIndex = 5;
             this.inputEngNamelebal.Text = "Name:";
             this.inputEngNamelebal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.inputEngNamelebal.Click += new System.EventHandler(this.label2_Click);
             // 
             // inputEngName
             // 
@@ -131,7 +129,6 @@ namespace HW_MyHomework
             this.inputEngName.Name = "inputEngName";
             this.inputEngName.Size = new System.Drawing.Size(140, 40);
             this.inputEngName.TabIndex = 4;
-            this.inputEngName.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // inputSexlabel
             // 
@@ -148,7 +145,6 @@ namespace HW_MyHomework
             this.inputSexlabel.TabIndex = 7;
             this.inputSexlabel.Text = "性別:";
             this.inputSexlabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.inputSexlabel.Click += new System.EventHandler(this.label3_Click);
             // 
             // inputSex
             // 
@@ -161,7 +157,6 @@ namespace HW_MyHomework
             this.inputSex.Name = "inputSex";
             this.inputSex.Size = new System.Drawing.Size(140, 40);
             this.inputSex.TabIndex = 6;
-            this.inputSex.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // inputStarsignlabel
             // 
@@ -178,7 +173,6 @@ namespace HW_MyHomework
             this.inputStarsignlabel.TabIndex = 9;
             this.inputStarsignlabel.Text = "星座:";
             this.inputStarsignlabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.inputStarsignlabel.Click += new System.EventHandler(this.inputStarsignlabel_Click);
             // 
             // inputStarsign
             // 

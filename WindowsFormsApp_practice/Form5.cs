@@ -72,5 +72,52 @@ namespace WindowsFormsApp_practice
             }
             return cls + "總成績: " + total;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnValid_Click(object sender, EventArgs e)
+        {
+            // admin = 1
+            // user > 1
+            int Role = 1;
+            if (Role == 1)
+            {
+                btnProduct.Enabled = true;
+            }
+            else
+            {
+                btnProduct.Enabled = false;
+            }
+        }
+
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("管理者可看");
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            btnProduct.Enabled = false;
+        }
+
+        private void btnValidConst_Click(object sender, EventArgs e)
+        {
+            // 不希望被任意修改 >>>常數
+            // 但數值又特別多 >>> enum
+            int Role = 1;
+            const int Admin = 1, user = 2;
+            if (Role == Admin)
+            {
+                btnProduct.Enabled = true;
+            }
+            else if (Role == user)
+            {
+                btnProduct.Enabled = false;
+            }
+
+        }
     }
 }

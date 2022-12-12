@@ -18,10 +18,6 @@ namespace HW_MyHomework
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Hello_01_Load(object sender, EventArgs e)
         {
@@ -55,26 +51,6 @@ namespace HW_MyHomework
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {   
             String nameChinese = inputName.Text;
@@ -99,21 +75,6 @@ namespace HW_MyHomework
                 "\n 性別是" + sex +
                 "\n 星座是" + star +
                 "\n 很高興認識你。");
-        }
-
-        private void inputStarsignlabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Move(object sender, EventArgs e)
-        {
-            label1.Text = this.Location.X + "," + this.Location.Y; 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
     }
