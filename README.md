@@ -27,6 +27,9 @@ TODO:decimal的blog
 4. Instance vs static + 執行個體變數
 5. callByRef vs CallByVal
 
+待辦事項:
+C#筆記整理變數傳遞、建構子、類別屬性建立、變數權限
+老師回答的問題整理筆記
 
 問題整理:
 1. HW1無法調整按鈕新增三角形的圖案
@@ -35,13 +38,6 @@ TODO:decimal的blog
 4. 執行到一半看屬性值 例如size
 5. TODO兩個表單的相對位置不會設定hw1與main
 
-hw2
-    public partial class hw02_Loan : Form
-    {
-        public hw02_Loan()
-        {
-            InitializeComponent();
-        }
-        // 定義變數為何無法定義在這裡?
+
 
 
