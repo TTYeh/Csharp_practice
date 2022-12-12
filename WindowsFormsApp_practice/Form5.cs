@@ -55,5 +55,22 @@ namespace WindowsFormsApp_practice
             functionRef3(out testVal);
             MessageBox.Show("test Val: " + testVal);
         }
+
+        private void btn_paras_Click(object sender, EventArgs e)
+        {
+            string totalC = MyParams("國文", 50,60,70,80,90);
+            MessageBox.Show(totalC);
+            totalC = MyParams("數學");
+            MessageBox.Show(totalC);
+        }
+        string MyParams(string cls, params int[] score)
+        {
+            int total = 0;
+            for (int i = 0; i < score.Length; i++)
+            { 
+                total += score[i];
+            }
+            return cls + "總成績: " + total;
+        }
     }
 }
