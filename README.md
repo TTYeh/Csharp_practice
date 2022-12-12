@@ -33,6 +33,16 @@ TODO:decimal的blog
 3. 傳Ref
 4. function不一定會傳入的參數用params
 5. 屬性與建構子
+        public static hw_E1_guessMain formInstance;
+        public Label labelInstance;
+        public hw_E1_guessMain()
+        {
+            InitializeComponent();
+            formInstance = this;
+            labelInstance = labelShowMsg;
+        }
+hw_E1_guessMain.formInstance.labelInstance.Text = returnUserGuess();
+
 
 待辦事項:
 C#筆記整理變數傳遞、建構子、類別屬性建立、變數權限
