@@ -142,5 +142,22 @@ namespace WindowsFormsApp_practice
             }
 
         }
+
+        private void btnEnumCase_Click(object sender, EventArgs e)
+        {
+            UserRole role = UserRole.engineer;
+            switch(role)
+            {
+                case UserRole.Admin:
+                    btnProduct.Enabled = true;
+                    break;
+                case UserRole.engineer:
+                    btnProduct.Enabled = false;
+                    break;
+                case UserRole.user1:
+                    btnProduct.Enabled = false;
+                    break;
+            }
+        }
     }
 }
