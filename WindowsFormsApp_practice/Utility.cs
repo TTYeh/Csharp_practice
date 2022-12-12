@@ -53,9 +53,11 @@ namespace WindowsFormsApp_practice
 
     public struct ProductUtility2
     {
+        // { get; set; } 沒有這個是欄位，有的話是屬性
         public string Name { get; set; }
         public decimal Price { get; set; }
 
+        // 當作init的建構子使用，是屬性才有，在呼叫時看參數組合，決定多載 所載入的參數。
         public ProductUtility2(string PN, decimal PP)
         { 
             Name = PN;

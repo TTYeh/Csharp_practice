@@ -204,6 +204,9 @@ namespace WindowsFormsApp_practice
             else 
             {
                 MessageBox.Show("請在價格欄輸入正確的數字");
+                inputPrice.Focus();
+                inputPrice.Clear();
+                
             }
         }
     }
