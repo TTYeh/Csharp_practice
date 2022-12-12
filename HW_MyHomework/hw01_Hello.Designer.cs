@@ -35,32 +35,7 @@ namespace HW_MyHomework
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void SetMyButtonIcon(Button btnRef)
-        {
-            // Assign an image to the button.
-            // TODO  看不懂 https://stackoverflow.com/questions/11483655/icon-inside-of-button
-            // https://learn.microsoft.com/zh-tw/dotnet/api/system.drawing.image.fromfile?view=dotnet-plat-ext-7.0
-            // 自動調整大小?
-            btnRef.BackgroundImageLayout = ImageLayout.Stretch;
 
-            string projectCurPath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(
-             Path.GetDirectoryName(System.AppDomain.CurrentDomain.BaseDirectory))));
-            // btn_hi.Image = Image.FromFile("C:\\Users\\User\\Desktop\\cSharp_practice\\project\\lab_Csharp_practice\\source\\image_hw\\play.jpg");
-
-            try
-            {
-                btnRef.Image = Image.FromFile(projectCurPath + "\\source\\image_hw\\play2.png");
-                // Align the image and text on the button.
-                btnRef.ImageAlign = ContentAlignment.MiddleLeft;
-                btnRef.TextAlign = ContentAlignment.MiddleRight;
-            }
-            catch (System.IO.FileNotFoundException)
-            {
-                MessageBox.Show("There was an error opening the bitmap." +
-                    "Please check the path.");
-            }
-
-        }
         private void InitializeComponent()
         {
             this.btn_hi = new System.Windows.Forms.Button();
@@ -85,7 +60,7 @@ namespace HW_MyHomework
             this.btn_hi.Text = "say Hi!";
             this.btn_hi.UseVisualStyleBackColor = true;
             this.btn_hi.Click += new System.EventHandler(this.button1_Click);
-            SetMyButtonIcon(btn_hi);
+            //SetMyButtonIcon(btn_hi);
             // 
             // btn_hello
             // 
@@ -96,7 +71,8 @@ namespace HW_MyHomework
             this.btn_hello.Text = "say Hello";
             this.btn_hello.UseVisualStyleBackColor = true;
             this.btn_hello.Click += new System.EventHandler(this.button2_Click);
-            SetMyButtonIcon(btn_hello);
+            //SetMyButtonIcon(btn_hi);
+            // SetMyButtonIcon(btn_hello);
             // 
             // inputName
             // 

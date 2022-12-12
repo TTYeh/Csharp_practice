@@ -46,6 +46,7 @@ namespace HW_MyHomework
             helloForm.StartPosition = FormStartPosition.Manual;
             helloForm.Left = 310;
             helloForm.Top = 120;
+    // 可塞到容器
             // helloForm.StartPosition = FormStartPosition.CenterScreen;
             helloForm.Show();
             

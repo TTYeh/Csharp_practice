@@ -59,6 +59,9 @@ namespace HW_MyHomework
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 2);
@@ -79,6 +82,9 @@ namespace HW_MyHomework
             // 
             // splitContainer1
             // 
+            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.splitContainer1.Location = new System.Drawing.Point(0, 112);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -114,7 +120,7 @@ namespace HW_MyHomework
             this.splitContainer1.Panel2.ForeColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.ImeMode = System.Windows.Forms.ImeMode.On;
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint_1);
-            this.splitContainer1.Size = new System.Drawing.Size(1229, 484);
+            this.splitContainer1.Size = new System.Drawing.Size(1229, 597);
             this.splitContainer1.SplitterDistance = 409;
             this.splitContainer1.TabIndex = 1;
             // 

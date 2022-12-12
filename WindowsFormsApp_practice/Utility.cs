@@ -38,6 +38,11 @@ namespace WindowsFormsApp_practice
         public int instanceNumber;
         public static int staticNumber;
     }
+    public class TestRef
+    {
+        public int testVal;
+
+    }
 
 
 }
