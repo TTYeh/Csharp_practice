@@ -71,10 +71,10 @@
     <Compile Include="hw02\hw02_LoanMain.Designer.cs">
       <DependentUpon>hw02_LoanMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="hw01_Hello.cs">
+    <Compile Include="hw01\hw01_Hello.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="hw01_Hello.Designer.cs">
+    <Compile Include="hw01\hw01_Hello.Designer.cs">
       <DependentUpon>hw01_Hello.cs</DependentUpon>
     </Compile>
     <Compile Include="mainForm.cs">
@@ -88,7 +88,7 @@
     <EmbeddedResource Include="hw02\hw02_LoanMain.resx">
       <DependentUpon>hw02_LoanMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hw01_Hello.resx">
+    <EmbeddedResource Include="hw01\hw01_Hello.resx">
       <DependentUpon>hw01_Hello.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="hw02\hw02_LoanReport.resx">

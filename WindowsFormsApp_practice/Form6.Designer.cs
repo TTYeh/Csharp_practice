@@ -105,7 +105,7 @@
             // 
             // btnDoLoop
             // 
-            this.btnDoLoop.Location = new System.Drawing.Point(261, 72);
+            this.btnDoLoop.Location = new System.Drawing.Point(320, 72);
             this.btnDoLoop.Name = "btnDoLoop";
             this.btnDoLoop.Size = new System.Drawing.Size(115, 53);
             this.btnDoLoop.TabIndex = 7;
@@ -115,7 +115,7 @@
             // 
             // btn_for
             // 
-            this.btn_for.Location = new System.Drawing.Point(261, 131);
+            this.btn_for.Location = new System.Drawing.Point(320, 131);
             this.btn_for.Name = "btn_for";
             this.btn_for.Size = new System.Drawing.Size(115, 53);
             this.btn_for.TabIndex = 8;
