@@ -40,6 +40,38 @@ namespace WindowsFormsApp_practice
             {
                 labelGrade.Text = "E級";
             }
+        }
+
+        private void btn29_2_Click(object sender, EventArgs e)
+        {
+            int score = int.Parse(textScore.Text);
+            if (score >= 0 && score <= 100)
+            {
+                switch (score)
+                {
+                    case int n when (n >= 90 && n <= 100):
+                        labelGrade.Text = "A級";
+                        break;
+                    case int n when (n >= 80):
+                        labelGrade.Text = "B級";
+                        break;
+                    case int n when (n >= 70):
+                        labelGrade.Text = "C級";
+                        break;
+                    case int n when (n >= 60):
+                        labelGrade.Text = "D級";
+                        break;
+                    case int n when (n >= 0 && n < 60):
+                        labelGrade.Text = "E級";
+                        break;
+
+                }
+            }
+            else
+            {
+                labelGrade.Text = "Out Of Range";
+            }
+               
 
         }
     }

@@ -72,6 +72,7 @@
             this.btn29_2.TabIndex = 3;
             this.btn29_2.Text = "29CaseStruct-2";
             this.btn29_2.UseVisualStyleBackColor = true;
+            this.btn29_2.Click += new System.EventHandler(this.btn29_2_Click);
             // 
             // textScore
             // 
