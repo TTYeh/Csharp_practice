@@ -165,6 +165,7 @@ namespace WindowsFormsApp_practice
         private void btn_classArr_Click(object sender, EventArgs e)
         {
             string result = "";
+            /*
             Member[] members = new Member[2];
             members[0] = new Member();
             members[1] = new Member();
@@ -172,6 +173,13 @@ namespace WindowsFormsApp_practice
             members[0].Age = 10;
             members[1].Name = "Mike";
             members[1].Age = 11;
+            */
+
+            Member[] members =
+            {
+                new Member(){Name = "John" , Age = 40 },
+                new Member(){Name = "John" , Age = 41 }
+            };
             for (int i = 0; i < members.Length; i++)
             {
                 result += $"{members[i].Name}, {members[i].Age} \n";
