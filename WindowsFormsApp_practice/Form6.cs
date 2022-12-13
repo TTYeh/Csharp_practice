@@ -85,5 +85,17 @@ namespace WindowsFormsApp_practice
             }
             MessageBox.Show(result);
         }
+
+        private void btnDoLoop_Click(object sender, EventArgs e)
+        {
+            int i = 10;
+            string result = "";
+            do
+            {
+                result += i + "\n";
+                i++;
+            } while (i < 10);
+            MessageBox.Show(result);
+        }
     }
 }
