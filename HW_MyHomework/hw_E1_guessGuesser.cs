@@ -54,7 +54,7 @@ namespace HW_MyHomework
         public string returnUserGuess() 
         {
             // 好像這裡可以設定Utility的方法耶?
-            string frontWord ="";
+            string frontWord = hw_E1_guessMain.formInstanceMain.labelShowMsg.Text;
             bool isInRange = (hw_E1_Utility.userGuess <= hw_E1_Utility.boundUpperLimit && hw_E1_Utility.boundLowerLimit <= hw_E1_Utility.userGuess);
             if (hw_E1_Utility.answer > hw_E1_Utility.userGuess && isInRange) { //若答案60 猜50，新邊界50-100
                 hw_E1_Utility.boundLowerLimit = hw_E1_Utility.userGuess;
@@ -67,15 +67,15 @@ namespace HW_MyHomework
             } else if (hw_E1_Utility.answer == hw_E1_Utility.userGuess && isInRange)
             {
                 // answer == userGuess
-            frontWord = " Right!!! Answer is " + hw_E1_Utility.answer + "\nCount:" + hw_E1_Utility.guessCount;
+            frontWord = " Right!!! Answer is " + hw_E1_Utility.answer + "\nYour Count:" + hw_E1_Utility.guessCount;
             }
                 //else {
                 //    frontWord = "Out of Range! Please Enter Between: " + hw_E1_Utility.boundLowerLimit + "and" + hw_E1_Utility.boundUpperLimit;
                 //    MessageBox.Show(frontWord);
                 //}
             if (!isInRange) {
-                frontWord = "Out of Range! Please Enter Between: " + hw_E1_Utility.boundLowerLimit + "and" + hw_E1_Utility.boundUpperLimit;
-                MessageBox.Show(frontWord);
+                string mesboxString = "Out of Range! Please Enter Between: " + hw_E1_Utility.boundLowerLimit + "and" + hw_E1_Utility.boundUpperLimit;
+                MessageBox.Show(mesboxString, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return frontWord;
@@ -84,7 +84,6 @@ namespace HW_MyHomework
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-            hw_E1_Utility.isCallGuesser = false;
         }
     }
 }

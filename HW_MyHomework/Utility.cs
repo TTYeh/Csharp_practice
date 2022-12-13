@@ -18,7 +18,6 @@ namespace HW_MyHomework
             public static int boundLowerLimit { get; set; }
             public static string dispString { get; set; }
             public static int guessCount;
-            public static bool isCallGuesser;
             // 要問是否用這些變數傳遞適當
         }
 

@@ -48,12 +48,11 @@ namespace HW_MyHomework
             {
                 hw_E1_guessGuesser guesser = new hw_E1_guessGuesser();
                 guesser.Show();
-                hw_E1_Utility.isCallGuesser = true;
             }
             else
             {
                 // TODO:讓已經存在的視窗閃兩下
-                // hw_E1_guessGuesser.onlyOnceGuessForm.Show();
+                hw_E1_guessGuesser.onlyOnceGuessForm.TopMost = true;
             }
         }
         private bool isFormExist() {
@@ -94,7 +93,6 @@ namespace HW_MyHomework
             hw_E1_Utility.boundLowerLimit = 0;
             hw_E1_Utility.boundUpperLimit = 100;
             hw_E1_Utility.guessCount = 0;
-            hw_E1_Utility.isCallGuesser = false;
             // 委派結尾???
             // btnShowAns.Click -= new EventHandler(this.hw_E1_guessMain_Load);
         }
