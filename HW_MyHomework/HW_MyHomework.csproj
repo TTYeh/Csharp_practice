@@ -77,10 +77,10 @@
     <Compile Include="hw01\hw01_Hello.Designer.cs">
       <DependentUpon>hw01_Hello.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainForm.cs">
+    <Compile Include="hw00_Main\mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainForm.Designer.cs">
+    <Compile Include="hw00_Main\mainForm.Designer.cs">
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -100,7 +100,7 @@
     <EmbeddedResource Include="hw_E1_guessNum\hw_E1_guessMain.resx">
       <DependentUpon>hw_E1_guessMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainForm.resx">
+    <EmbeddedResource Include="hw00_Main\mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
