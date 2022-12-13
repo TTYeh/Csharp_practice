@@ -36,6 +36,7 @@
             this.labelGrade = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnDoLoop = new System.Windows.Forms.Button();
+            this.btn_for = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_logic
@@ -112,11 +113,22 @@
             this.btnDoLoop.UseVisualStyleBackColor = true;
             this.btnDoLoop.Click += new System.EventHandler(this.btnDoLoop_Click);
             // 
+            // btn_for
+            // 
+            this.btn_for.Location = new System.Drawing.Point(261, 131);
+            this.btn_for.Name = "btn_for";
+            this.btn_for.Size = new System.Drawing.Size(115, 53);
+            this.btn_for.TabIndex = 8;
+            this.btn_for.Text = "32_for";
+            this.btn_for.UseVisualStyleBackColor = true;
+            this.btn_for.Click += new System.EventHandler(this.btn_for_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_for);
             this.Controls.Add(this.btnDoLoop);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelGrade);
@@ -142,5 +154,6 @@
         private System.Windows.Forms.Label labelGrade;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDoLoop;
+        private System.Windows.Forms.Button btn_for;
     }
 }

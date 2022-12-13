@@ -97,5 +97,22 @@ namespace WindowsFormsApp_practice
             } while (i < 10);
             MessageBox.Show(result);
         }
+
+        private void btn_for_Click(object sender, EventArgs e)
+        {
+            string result = "";
+            for (int i = 0; i < 10; i++)
+            {
+                result += i + "\n";
+                // i++;
+            }
+            for (int j = 0, x = 100, y = 50; j + y < x; j += 3, y--)
+            {
+                result += $"i={x} , j={j} , y = {y} "+ "\n";
+
+            }
+
+            MessageBox.Show(result);
+        }
     }
 }
