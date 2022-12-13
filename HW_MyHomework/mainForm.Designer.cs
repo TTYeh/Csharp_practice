@@ -299,7 +299,7 @@ namespace HW_MyHomework
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "mainForm";
-            this.Text = "Form1";
+            this.Text = "c#作業";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.mainForm_Load);
             this.panel1.ResumeLayout(false);

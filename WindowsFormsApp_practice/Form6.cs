@@ -211,5 +211,34 @@ namespace WindowsFormsApp_practice
             }
             return arr;
         }
+
+        private void btn_swap_Click(object sender, EventArgs e)
+        {
+            string A = "AA", B = "BB";
+            MessageBox.Show($"Before: A: {A}, B: {B}");
+            swap(ref A, ref B);
+            MessageBox.Show($"After: A: {A}, B: {B}");
+            int C = 1, D = 2;
+            MessageBox.Show($"Before: C: {C}, D: {D}");
+            swap(ref C, ref D);
+            MessageBox.Show($"After: C: {C}, D: {D}");
+        }
+        void swap(ref int a, ref int b) {
+            int T = a;
+            a = b;
+            b = T;
+        }
+        void swap(ref string a, ref string b)
+        {
+            string T = a;
+            a = b;
+            b = T;
+        }
+        void swap(ref bool a, ref bool b)
+        {
+            bool T = a;
+            a = b;
+            b = T;
+        }
     }
 }
