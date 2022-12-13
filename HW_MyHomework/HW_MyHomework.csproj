@@ -46,42 +46,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="hw02_LoanReport.cs">
+    <Compile Include="Utility.cs" />
+    <Compile Include="hw_E1_guessNum\hw_E1_guessGuesser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="hw02_LoanReport.Designer.cs">
+    <Compile Include="hw_E1_guessNum\hw_E1_guessGuesser.Designer.cs">
+      <DependentUpon>hw_E1_guessGuesser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw_E1_guessNum\hw_E1_guessMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw_E1_guessNum\hw_E1_guessMain.Designer.cs">
+      <DependentUpon>hw_E1_guessMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw02\hw02_LoanReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw02\hw02_LoanReport.Designer.cs">
       <DependentUpon>hw02_LoanReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="hw02_LoanMain.cs">
+    <Compile Include="hw02\hw02_LoanMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="hw02_LoanMain.Designer.cs">
+    <Compile Include="hw02\hw02_LoanMain.Designer.cs">
       <DependentUpon>hw02_LoanMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="hw01_Hello.cs">
+    <Compile Include="hw01\hw01_Hello.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="hw01_Hello.Designer.cs">
+    <Compile Include="hw01\hw01_Hello.Designer.cs">
       <DependentUpon>hw01_Hello.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainForm.cs">
+    <Compile Include="hw00_Main\mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainForm.Designer.cs">
+    <Compile Include="hw00_Main\mainForm.Designer.cs">
       <DependentUpon>mainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="hw02_LoanMain.resx">
+    <EmbeddedResource Include="hw02\hw02_LoanMain.resx">
       <DependentUpon>hw02_LoanMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hw01_Hello.resx">
+    <EmbeddedResource Include="hw01\hw01_Hello.resx">
       <DependentUpon>hw01_Hello.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="hw02_LoanReport.resx">
+    <EmbeddedResource Include="hw02\hw02_LoanReport.resx">
       <DependentUpon>hw02_LoanReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainForm.resx">
+    <EmbeddedResource Include="hw_E1_guessNum\hw_E1_guessGuesser.resx">
+      <DependentUpon>hw_E1_guessGuesser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw_E1_guessNum\hw_E1_guessMain.resx">
+      <DependentUpon>hw_E1_guessMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw00_Main\mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
