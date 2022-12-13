@@ -186,5 +186,30 @@ namespace WindowsFormsApp_practice
             }
             MessageBox.Show(result);
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            int[] newArr = createNewArr(20);
+
+            string result = "";
+            for (int i = 0; i < newArr.Length; i++)
+            {
+                // result += $"newArr[{i}] = {newArr[i]}\n";
+            }
+
+            foreach (int item in newArr) {
+                result += $"newArr[] = {item}\n";
+            }
+            MessageBox.Show(result);
+        }
+        int[] createNewArr(int Length)
+        {
+            int[] arr = new int[Length];
+            for (int i = 0; i < Length; i++)
+            {
+                arr[i] = i * i;
+            }
+            return arr;
+        }
     }
 }
