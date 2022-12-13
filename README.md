@@ -33,28 +33,31 @@ TODO:decimal的blog
 3. 傳Ref
 4. function不一定會傳入的參數用params
 5. 屬性與建構子
-        public static hw_E1_guessMain formInstance;
-        public Label labelInstance;
-        public hw_E1_guessMain()
-        {
-            InitializeComponent();
-            formInstance = this;
-            labelInstance = labelShowMsg;
-        }
-hw_E1_guessMain.formInstance.labelInstance.Text = returnUserGuess();
 
 
-待辦事項:
-C#筆記整理變數傳遞、建構子、類別屬性建立、變數權限
-老師回答的問題整理筆記
+---12/13---
+1. case
+2. while
 
-問題整理:
+
+
+待問:
+// 定義變數:公用變數有競態，還有建議其他的方法?
 1. HW1無法調整按鈕新增三角形的圖案
-2. Main的表單會切到圖片，icon也是
-3. 點到元件叫出空的參考，可以自動整理刪掉嗎?
 4. 執行到一半看屬性值 例如size
-5. TODO兩個表單的相對位置不會設定hw1與main
 
+
+待解:
+// 查找官方文件:form至頂閃爍
+// 查找官方文件屬性:5. TODO兩個表單的相對位置不會設定hw1與main
+待筆記:
+2. Main的表單會切到圖片，icon也是
 6. struct的屬性等同於類別的欄位?
+C#筆記整理變數傳遞、建構子、類別屬性建立、變數權限
+待辦事項:
+
+
+
+
 
 
