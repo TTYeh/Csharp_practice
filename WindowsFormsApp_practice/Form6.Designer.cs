@@ -37,6 +37,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnDoLoop = new System.Windows.Forms.Button();
             this.btn_for = new System.Windows.Forms.Button();
+            this.btn_1d_arr = new System.Windows.Forms.Button();
+            this.btn_2d_arr = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_logic
@@ -123,11 +125,33 @@
             this.btn_for.UseVisualStyleBackColor = true;
             this.btn_for.Click += new System.EventHandler(this.btn_for_Click);
             // 
+            // btn_1d_arr
+            // 
+            this.btn_1d_arr.Location = new System.Drawing.Point(320, 190);
+            this.btn_1d_arr.Name = "btn_1d_arr";
+            this.btn_1d_arr.Size = new System.Drawing.Size(135, 53);
+            this.btn_1d_arr.TabIndex = 9;
+            this.btn_1d_arr.Text = "33_build_1D_Arr";
+            this.btn_1d_arr.UseVisualStyleBackColor = true;
+            this.btn_1d_arr.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btn_2d_arr
+            // 
+            this.btn_2d_arr.Location = new System.Drawing.Point(320, 249);
+            this.btn_2d_arr.Name = "btn_2d_arr";
+            this.btn_2d_arr.Size = new System.Drawing.Size(135, 53);
+            this.btn_2d_arr.TabIndex = 10;
+            this.btn_2d_arr.Text = "34_build_2D_Arr";
+            this.btn_2d_arr.UseVisualStyleBackColor = true;
+            this.btn_2d_arr.Click += new System.EventHandler(this.btn_2d_arr_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_2d_arr);
+            this.Controls.Add(this.btn_1d_arr);
             this.Controls.Add(this.btn_for);
             this.Controls.Add(this.btnDoLoop);
             this.Controls.Add(this.button1);
@@ -155,5 +179,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDoLoop;
         private System.Windows.Forms.Button btn_for;
+        private System.Windows.Forms.Button btn_1d_arr;
+        private System.Windows.Forms.Button btn_2d_arr;
     }
 }
