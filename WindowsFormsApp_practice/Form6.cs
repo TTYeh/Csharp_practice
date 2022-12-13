@@ -74,5 +74,16 @@ namespace WindowsFormsApp_practice
                
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            string result = "";
+            while (i < 10) {
+                result +=  i + "\n";
+                i ++; 
+            }
+            MessageBox.Show(result);
+        }
     }
 }

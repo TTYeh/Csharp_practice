@@ -24,7 +24,7 @@ namespace HW_MyHomework
             onlyOnceGuessForm = this;
 
         }
-        // 定義變數
+        // 定義變數:公用變數有競態，還有建議其他的方法?
         // static int answer;
         // static int userGuess;
         // static int boundUpperLimit = 100;
@@ -35,11 +35,10 @@ namespace HW_MyHomework
             bool isInt = int.TryParse(textBoxInputGuess.Text, out int temp);
             if (isInt) {
                 hw_E1_Utility.userGuess = temp;
-                // 無法以執行個體執行?????
-                // hw_E1_guessMain.formInstanceMain.labelInstanceMain.Text =  "";
+                // 要確定好更新數值的個體
                 hw_E1_guessMain.formInstanceMain.labelShowMsg.Text = returnUserGuess();
                 hw_E1_Utility.guessCount += 1;
-                // 這個有爭議，最後不要這樣用
+                // 失敗紀錄:
                 // guessMainForm.labelShowMsg.Text = returnUserGuess();
                 // guessMainForm.updateMainDisp();
             }
@@ -53,27 +52,26 @@ namespace HW_MyHomework
         }
         public string returnUserGuess() 
         {
-            // 好像這裡可以設定Utility的方法耶?
             string frontWord = hw_E1_guessMain.formInstanceMain.labelShowMsg.Text;
             bool isInRange = (hw_E1_Utility.userGuess <= hw_E1_Utility.boundUpperLimit && hw_E1_Utility.boundLowerLimit <= hw_E1_Utility.userGuess);
-            if (hw_E1_Utility.answer > hw_E1_Utility.userGuess && isInRange) { //若答案60 猜50，新邊界50-100
+            if (hw_E1_Utility.answer > hw_E1_Utility.userGuess && isInRange) { 
+                // 使用者猜太小
                 hw_E1_Utility.boundLowerLimit = hw_E1_Utility.userGuess;
                 frontWord = " Your Guess: " + hw_E1_Utility.userGuess + "\n Too Small !!! \n Between " + hw_E1_Utility.boundLowerLimit + "and" + hw_E1_Utility.boundUpperLimit;
 
             } else if (hw_E1_Utility.answer < hw_E1_Utility.userGuess && isInRange)
             {
+                // 使用者猜太大
                 hw_E1_Utility.boundUpperLimit = hw_E1_Utility.userGuess;
                 frontWord = " Your Guess: " + hw_E1_Utility.userGuess + "\n Too Big !!! \n Between " + hw_E1_Utility.boundLowerLimit + "and" + hw_E1_Utility.boundUpperLimit;
             } else if (hw_E1_Utility.answer == hw_E1_Utility.userGuess && isInRange)
             {
-                // answer == userGuess
-            frontWord = " Right!!! Answer is " + hw_E1_Utility.answer + "\nYour Count:" + hw_E1_Utility.guessCount;
+                // 使用者猜中
+                frontWord = " Right!!! Answer is " + hw_E1_Utility.answer + "\nYour Count:" + hw_E1_Utility.guessCount;
             }
-                //else {
-                //    frontWord = "Out of Range! Please Enter Between: " + hw_E1_Utility.boundLowerLimit + "and" + hw_E1_Utility.boundUpperLimit;
-                //    MessageBox.Show(frontWord);
-                //}
+
             if (!isInRange) {
+                // 使用者數值超出範圍
                 string mesboxString = "Out of Range! Please Enter Between: " + hw_E1_Utility.boundLowerLimit + "and" + hw_E1_Utility.boundUpperLimit;
                 MessageBox.Show(mesboxString, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

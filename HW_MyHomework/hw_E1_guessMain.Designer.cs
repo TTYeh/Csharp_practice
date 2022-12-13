@@ -41,7 +41,6 @@
             this.labelShowMsg.Size = new System.Drawing.Size(618, 127);
             this.labelShowMsg.TabIndex = 0;
             this.labelShowMsg.Text = "Please Select A Number Bwteen 1 TO 100";
-            this.labelShowMsg.Click += new System.EventHandler(this.labelShowMsg_Click);
             // 
             // btnGuess
             // 

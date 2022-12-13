@@ -21,29 +21,10 @@ namespace HW_MyHomework
             formInstanceMain = this;
             labelInstanceMain = labelShowMsg;
         }
-        // 定義變數 改用utility
-        // static int answer;
-
+        // 定義變數? 除utility有更好的方法?
 
         private void btnGuess_Click(object sender, EventArgs e)
         {
-
-            // 要確認有無class已經instance了
-            /*
-            string @namespace = "HW_MyHomework";
-            string @class = "hw_E1_guessGuesser";
-            var myClassType = Type.GetType(String.Format("{0}.{1}", @namespace, @class));
-            object instance = myClassType == null ? null : Activator.CreateInstance(myClassType);
-            if (myClassType != null)
-            {
-            }
-            else
-            {
-                hw_E1_guessGuesser guesser = new hw_E1_guessGuesser();
-                guesser.Show();
-            }
-            */
-            // 問題若按視窗x 就沒有isCallGuesser的變數變化了
             if (! isFormExist())
             {
                 hw_E1_guessGuesser guesser = new hw_E1_guessGuesser();
@@ -67,15 +48,28 @@ namespace HW_MyHomework
                 }
             }
             return isFormExist;
+            // 失敗的嘗試:要確認有無class已經instance了
+            /*
+            string @namespace = "HW_MyHomework";
+            string @class = "hw_E1_guessGuesser";
+            var myClassType = Type.GetType(String.Format("{0}.{1}", @namespace, @class));
+            object instance = myClassType == null ? null : Activator.CreateInstance(myClassType);
+            if (myClassType != null)
+            {
+            }
+            else
+            {
+                hw_E1_guessGuesser guesser = new hw_E1_guessGuesser();
+                guesser.Show();
+            }
+            */
         }
         private void btnShowAns_Click(object sender, EventArgs e)
         {   
-            // 每次都要new一個才能用utility?有點麻煩???????
             MessageBox.Show("正確的答案是: " + hw_E1_Utility.answer + "\n 確定後初始化");
-
             // 初始化answer &　main_label說明的值
             initMainDisp();
-            // 委派再call一次 function ，委派的順序要再確認一下????第二次完全一樣?
+            // 目前用不到，委派，因為事件的函式不用被連環執行
             // btnShowAns.Click += new EventHandler(this.hw_E1_guessMain_Load);
         }
 
@@ -95,14 +89,6 @@ namespace HW_MyHomework
             hw_E1_Utility.guessCount = 0;
             // 委派結尾???
             // btnShowAns.Click -= new EventHandler(this.hw_E1_guessMain_Load);
-        }
-        public void updateMainDisp()
-        {
-            labelShowMsg.Text = hw_E1_Utility.dispString;
-        }
-        private void labelShowMsg_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
