@@ -42,6 +42,7 @@
             this.btn_classArr = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_swap = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_logic
@@ -174,15 +175,26 @@
             this.btn_swap.Name = "btn_swap";
             this.btn_swap.Size = new System.Drawing.Size(201, 53);
             this.btn_swap.TabIndex = 13;
-            this.btn_swap.Text = "37_swap(a,b)";
+            this.btn_swap.Text = "37_swap_overLoad";
             this.btn_swap.UseVisualStyleBackColor = true;
             this.btn_swap.Click += new System.EventHandler(this.btn_swap_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(486, 249);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(201, 53);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "37_swap_generic";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btn_swap);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_classArr);
@@ -220,5 +232,6 @@
         private System.Windows.Forms.Button btn_classArr;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_swap;
+        private System.Windows.Forms.Button button3;
     }
 }

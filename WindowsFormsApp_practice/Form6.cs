@@ -240,5 +240,24 @@ namespace WindowsFormsApp_practice
             a = b;
             b = T;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int aint = 1, bint = 2;
+            MessageBox.Show($"Before: aint: {aint}, bint:{bint}");
+            genericSwap<int>(ref aint, ref bint);
+            MessageBox.Show($"After: aint: {aint}, bint:{bint}");
+            string astring = "aaa", bstring = "bbb";
+            MessageBox.Show($"Before: astring: {astring}, bstring:{bstring}");
+            genericSwap<string> (ref astring, ref bstring);
+            MessageBox.Show($"After: astring: {astring}, bstring:{bstring}");
+
+        }
+        void genericSwap<Tt>(ref Tt a, ref Tt b)
+        {
+            Tt temp = a;
+            a = b;
+            b = temp;
+        }
     }
 }
