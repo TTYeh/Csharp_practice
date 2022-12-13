@@ -114,5 +114,51 @@ namespace WindowsFormsApp_practice
 
             MessageBox.Show(result);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // define Array1
+            int[] arr = new int[3];
+            arr[0] = 1;
+            arr[1] = 2;
+            arr[2] = 3;
+            string result = "";
+            for (int i = 0; i < arr.Length; i++) {
+                result += arr[i] + "\n";
+            }
+            // define Array2
+            int[] arr2 = new int[3] { 4, 5, 6 };
+            for (int i = 0; i < arr2.Length; i++)
+            {
+                result += arr2[i] + "\n";
+            }
+            MessageBox.Show(result);
+        }
+
+        private void btn_2d_arr_Click(object sender, EventArgs e)
+        {
+            // define Array1
+            int[,] arr = new int[2,3];
+            arr[0,0] = 1;
+            arr[0,1] = 2;
+            arr[0,2] = 3;
+            arr[1,0] = 4;
+            arr[1,1] = 5;
+            arr[1,2] = 6;
+            string result = "";
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    result += arr[i,j] + "\n";
+                }
+            }
+            MessageBox.Show(result);
+            string[,] arr2 = new string[2, 3]
+            {
+                { "a","b","c"},
+                { "d","e","f"}
+            };
+        }
     }
 }
