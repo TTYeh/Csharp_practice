@@ -38,6 +38,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btn_remove = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +92,7 @@
             this.labShowEmp.BackColor = System.Drawing.Color.Chartreuse;
             this.labShowEmp.Font = new System.Drawing.Font("標楷體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labShowEmp.ForeColor = System.Drawing.Color.Red;
-            this.labShowEmp.Location = new System.Drawing.Point(343, 25);
+            this.labShowEmp.Location = new System.Drawing.Point(439, 15);
             this.labShowEmp.Name = "labShowEmp";
             this.labShowEmp.Size = new System.Drawing.Size(99, 23);
             this.labShowEmp.TabIndex = 5;
@@ -138,11 +139,22 @@
             this.btn_clear.UseVisualStyleBackColor = true;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(230, 15);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(203, 52);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "35_ArrList(集合)(錯誤示範)_加入不同資料型態";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.btn_clear);
             this.Controls.Add(this.btn_remove);
             this.Controls.Add(this.button2);
@@ -150,7 +162,7 @@
             this.Controls.Add(this.labShowEmp);
             this.Controls.Add(this.button1);
             this.Name = "Form7";
-            this.Text = "Form7";
+            this.Text = "傳統集合";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -170,5 +182,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_remove;
         private System.Windows.Forms.Button btn_clear;
+        private System.Windows.Forms.Button button3;
     }
 }
