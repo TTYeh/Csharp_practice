@@ -34,6 +34,7 @@ namespace HW_MyHomework
             {
                 // TODO:讓已經存在的視窗閃兩下
                 hw_E1_guessGuesser.onlyOnceGuessForm.TopMost = true;
+                // DialogResult a =  hw_E1_guessGuesser.onlyOnceGuessForm.ShowDialog();
             }
         }
         private bool isFormExist() {
