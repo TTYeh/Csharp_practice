@@ -40,6 +40,28 @@ TODO:decimal的blog
 2. while
 
 
+---作業:大小寫轉換---
+            string userInput = textBox1.Text;
+            string output = "";
+            bool firstEle = true;
+            foreach (char c in userInput)
+            {
+                if (char.IsUpper(c) && firstEle) {
+                    output += Char.ToLower(c);
+                }
+                else if (char.IsUpper(c)) 
+                {
+                    output += "_" + Char.ToLower(c);
+                }
+                else {
+                    output += c;
+                }
+                firstEle = false;
+            }
+            textBoxShow.Text = output;
+
+
+
 
 待問:
 // 定義變數:公用變數有競態，還有建議其他的方法?
