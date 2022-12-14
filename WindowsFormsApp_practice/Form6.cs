@@ -166,8 +166,13 @@ namespace WindowsFormsApp_practice
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+           
             foreach (Control item in this.Controls)
-            { 
+            {
+                // if (item.GetType() != typeof(Button))
+                if (!(item is  Button)) {
+                    continue;
+                }
                 item.BackColor = Color.AliceBlue;
                 item.ForeColor = Color.LawnGreen;
                 item.Left -= 10;

@@ -30,7 +30,7 @@ namespace Hw_detNet
 
         private void btn_judgeTime_Click(object sender, EventArgs e)
         {
-            labelShowResult.Text = Convert.ToString(dateTimePicker1.Value);
+            textBoxShow.Text = Convert.ToString(dateTimePicker1.Value);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,5 +38,21 @@ namespace Hw_detNet
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "MM/dd/yyyy hh:mm:ss";
         }
+
+        private void btn_99Multiple_Click(object sender, EventArgs e)
+        {
+            string result = "";
+            MultiplicationTableYtility mulClass = new MultiplicationTableYtility();
+            for (int multiplicand = 2; multiplicand <= 9; multiplicand++) {
+                for (int multiplier = 1; multiplier <= 9; multiplier++)
+                {
+                    result += mulClass.mulCalculate(multiplicand, multiplier);
+                }
+                result += "< ... 這裡要空一行 ...>\n";
+            }
+            textBoxShow.Text = result.Replace("\n", "\r\n"); ;
+            //MessageBox.Show(result);
+        }
+
     }
 }

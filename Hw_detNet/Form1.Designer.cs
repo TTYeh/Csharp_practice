@@ -35,10 +35,10 @@
             this.btn_letterChange = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.labelShowResult = new System.Windows.Forms.Label();
             this.btn_LeftStar = new System.Windows.Forms.Button();
             this.btnRightStar = new System.Windows.Forms.Button();
             this.btnMidStar = new System.Windows.Forms.Button();
+            this.textBoxShow = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +66,7 @@
             this.btn_99Multiple.TabIndex = 1;
             this.btn_99Multiple.Text = "hw1_99乘法表";
             this.btn_99Multiple.UseVisualStyleBackColor = true;
+            this.btn_99Multiple.Click += new System.EventHandler(this.btn_99Multiple_Click);
             // 
             // btn_judgeTime
             // 
@@ -119,16 +120,6 @@
             this.dateTimePicker1.TabIndex = 6;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // labelShowResult
-            // 
-            this.labelShowResult.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelShowResult.Font = new System.Drawing.Font("新細明體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelShowResult.Location = new System.Drawing.Point(467, 21);
-            this.labelShowResult.Name = "labelShowResult";
-            this.labelShowResult.Size = new System.Drawing.Size(624, 485);
-            this.labelShowResult.TabIndex = 1;
-            this.labelShowResult.Text = "===輸出區===";
-            // 
             // btn_LeftStar
             // 
             this.btn_LeftStar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -159,12 +150,21 @@
             this.btnMidStar.Text = "hw5_正三角星星";
             this.btnMidStar.UseVisualStyleBackColor = true;
             // 
+            // textBoxShow
+            // 
+            this.textBoxShow.Location = new System.Drawing.Point(467, 16);
+            this.textBoxShow.Multiline = true;
+            this.textBoxShow.Name = "textBoxShow";
+            this.textBoxShow.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxShow.Size = new System.Drawing.Size(624, 491);
+            this.textBoxShow.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1113, 533);
-            this.Controls.Add(this.labelShowResult);
+            this.Controls.Add(this.textBoxShow);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -172,6 +172,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -184,10 +185,10 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_letterChange;
         private System.Windows.Forms.Button btn_judgePrime;
-        private System.Windows.Forms.Label labelShowResult;
         private System.Windows.Forms.Button btnMidStar;
         private System.Windows.Forms.Button btnRightStar;
         private System.Windows.Forms.Button btn_LeftStar;
+        private System.Windows.Forms.TextBox textBoxShow;
     }
 }
 
