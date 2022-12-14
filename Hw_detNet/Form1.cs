@@ -19,6 +19,7 @@ namespace Hw_detNet
 
         private void btn_letterChange_Click(object sender, EventArgs e)
         {
+            // user Regex
             //“Capital A” (大寫A)
             //“Lower Case a” (小寫a)
         }
@@ -89,12 +90,81 @@ namespace Hw_detNet
         {
             // 查找該數值到根號的整數有沒有 可整除的餘數
             // 7是不是質數 
-            int.TryParse(inputNum.Text, out int userInput);
+            bool isPrime = true;
+            try
+            {
+                int.TryParse(inputNum.Text, out int userInput);
+                int searchBound = Convert.ToInt32(Math.Ceiling(Math.Pow(userInput, 0.5)));
+                if (userInput < 1)
+                {
+                    textBoxShow.Text = $"使用者輸入: {inputNum.Text}，不是大於1正整數1。母湯喔!";
+                    isPrime = false;
+                }
+                else
+                {
+                    for (int i = 2; i <= searchBound; i++)
+                    {
+                        if (userInput % i == 0)
+                        {
+                            textBoxShow.Text = $"使用者輸入: {userInput}不是質數";
+                            isPrime = false;
+                            break;
+                        }
+                    }
+                }
+                if (isPrime)
+                {
+                    // 最後都沒被整除就是質數
+                    textBoxShow.Text = $"使用者輸入: {userInput}是質數";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("不是大於1正整數1。母湯喔");
+            }
+            
+         
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_LeftStar_Click(object sender, EventArgs e)
+        {
+            string result = "";
+            for (int i = 1; i <= 5; i++ ) {
+                result += new string('＊', i); // "" 是string，''是char
+                result += "\r\n";
+            }
+            textBoxShow.Text = result;
+        }
+
+        private void btnRightStar_Click(object sender, EventArgs e)
+        {
+            string result = "";
+            for (int i = 1; i <= 5; i++)
+            {
+                int temp = 5 - i;
+                result += new string('　', temp);
+                result += new string('＊', i); // "" 是string，''是char
+                result += "\r\n";
+            }
+            textBoxShow.Text = result;
+        }
+
+        private void btnMidStar_Click(object sender, EventArgs e)
+        {
+            string result = "";
+            for (int i = 1; i <= 5; i++)
+            {
+                int temp = 5 - i;
+                result += new string('　', temp);
+                result += new string('＊', 2*(i-1)+1); // "" 是string，''是char
+                result += "\r\n";
+            }
+            textBoxShow.Text = result;
         }
     }
 }

@@ -131,6 +131,7 @@
             this.btn_LeftStar.TabIndex = 7;
             this.btn_LeftStar.Text = "hw5_左三角星星";
             this.btn_LeftStar.UseVisualStyleBackColor = true;
+            this.btn_LeftStar.Click += new System.EventHandler(this.btn_LeftStar_Click);
             // 
             // btnRightStar
             // 
@@ -141,6 +142,7 @@
             this.btnRightStar.TabIndex = 8;
             this.btnRightStar.Text = "hw5_右三角星星";
             this.btnRightStar.UseVisualStyleBackColor = true;
+            this.btnRightStar.Click += new System.EventHandler(this.btnRightStar_Click);
             // 
             // btnMidStar
             // 
@@ -151,6 +153,7 @@
             this.btnMidStar.TabIndex = 9;
             this.btnMidStar.Text = "hw5_正三角星星";
             this.btnMidStar.UseVisualStyleBackColor = true;
+            this.btnMidStar.Click += new System.EventHandler(this.btnMidStar_Click);
             // 
             // textBoxShow
             // 
