@@ -160,5 +160,16 @@ namespace WindowsFormsApp_practice
                 { "d","e","f"}
             };
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            foreach (Control item in this.Controls)
+            { 
+                item.BackColor = Color.AliceBlue;
+                item.ForeColor = Color.LawnGreen;
+                item.Left -= 10;
+                item.Top -= 3;
+            }
+        }
     }
 }

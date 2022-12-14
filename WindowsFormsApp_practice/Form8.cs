@@ -25,6 +25,7 @@ namespace WindowsFormsApp_practice
         }
         void showMethod()
         {
+            /*
             labShowEmp.Text = "-----員工清單-----\n";
             for (int i = 0; i < isEmp.Count; i++)
             {
@@ -32,6 +33,12 @@ namespace WindowsFormsApp_practice
                 // labShowEmp.Text += $"姓名: {isEmp[i].Name} , 年齡: {isEmp[i].Name} \n";
                 Employee employee = (Employee)isEmp[i];
                 labShowEmp.Text += $"姓名: {employee.Name} , 年齡: {employee.Age} \n";
+            }
+            */
+            labShowEmp.Text = "-----員工清單-----\n";
+            foreach (Employee myEmp in isEmp)
+            {
+                labShowEmp.Text += $"姓名: {myEmp.Name} , 年齡: {myEmp.Age} \n";
             }
         }
         private void button1_Click(object sender, EventArgs e)

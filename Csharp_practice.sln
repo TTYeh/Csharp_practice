@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Lab_Console", "Lab_Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_MyHomework", "HW_MyHomework\HW_MyHomework.csproj", "{C25FD039-1373-4AC6-B64D-C22206C14A2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hw_detNet", "Hw_detNet\Hw_detNet.csproj", "{2B0D1B46-09D9-41CF-985C-8BDD4259CE1E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C25FD039-1373-4AC6-B64D-C22206C14A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C25FD039-1373-4AC6-B64D-C22206C14A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C25FD039-1373-4AC6-B64D-C22206C14A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B0D1B46-09D9-41CF-985C-8BDD4259CE1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B0D1B46-09D9-41CF-985C-8BDD4259CE1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B0D1B46-09D9-41CF-985C-8BDD4259CE1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B0D1B46-09D9-41CF-985C-8BDD4259CE1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

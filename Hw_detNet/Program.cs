@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp_practice
+namespace Hw_detNet
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace WindowsFormsApp_practice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form6());
+            Application.Run(new Form1());
         }
     }
 }
