@@ -161,7 +161,6 @@ namespace WindowsFormsApp_practice
                 { "d","e","f"}
             };
         }
-
         private void btn_classArr_Click(object sender, EventArgs e)
         {
             string result = "";
