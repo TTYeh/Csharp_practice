@@ -32,5 +32,11 @@ namespace Hw_detNet
         {
             labelShowResult.Text = Convert.ToString(dateTimePicker1.Value);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+        }
     }
 }

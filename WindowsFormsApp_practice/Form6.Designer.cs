@@ -40,6 +40,7 @@
             this.btn_1d_arr = new System.Windows.Forms.Button();
             this.btn_2d_arr = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btn39 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_logic
@@ -110,9 +111,9 @@
             // 
             this.btnDoLoop.Location = new System.Drawing.Point(320, 72);
             this.btnDoLoop.Name = "btnDoLoop";
-            this.btnDoLoop.Size = new System.Drawing.Size(115, 53);
+            this.btnDoLoop.Size = new System.Drawing.Size(135, 53);
             this.btnDoLoop.TabIndex = 7;
-            this.btnDoLoop.Text = "31do";
+            this.btnDoLoop.Text = "31_do";
             this.btnDoLoop.UseVisualStyleBackColor = true;
             this.btnDoLoop.Click += new System.EventHandler(this.btnDoLoop_Click);
             // 
@@ -156,11 +157,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
+            // btn39
+            // 
+            this.btn39.Location = new System.Drawing.Point(471, 72);
+            this.btn39.Name = "btn39";
+            this.btn39.Size = new System.Drawing.Size(135, 53);
+            this.btn39.TabIndex = 12;
+            this.btn39.Text = "39_do_continue";
+            this.btn39.UseVisualStyleBackColor = true;
+            this.btn39.Click += new System.EventHandler(this.btn39_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn39);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_2d_arr);
             this.Controls.Add(this.btn_1d_arr);
@@ -194,5 +206,6 @@
         private System.Windows.Forms.Button btn_1d_arr;
         private System.Windows.Forms.Button btn_2d_arr;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn39;
     }
 }

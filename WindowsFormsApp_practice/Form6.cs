@@ -174,5 +174,22 @@ namespace WindowsFormsApp_practice
                 item.Top -= 3;
             }
         }
+
+        private void btn39_Click(object sender, EventArgs e)
+        {
+            int i = 0;
+            string result = "";
+            do
+            {
+                if (i % 2 != 0)
+                {
+                    i++;
+                    continue;
+                }
+                result += i + "\n";
+                i++;
+            } while (i < 10);
+            MessageBox.Show(result);
+        }
     }
 }
