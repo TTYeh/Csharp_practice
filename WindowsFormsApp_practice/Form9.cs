@@ -104,5 +104,30 @@ namespace WindowsFormsApp_practice
             streamWriter.Close();
             fs.Close();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string[] stars = {"aaa","bbb","ccc" };
+            string result = "";
+            try
+            {
+                for (int i = 0; i <= stars.Length; i++)
+                {
+                    result += stars[i];
+                }
+            }
+            //catch (IndexOutOfRangeException ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally {
+                MessageBox.Show("Finally");
+            }
+
+        }
     }
 }

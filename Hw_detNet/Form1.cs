@@ -85,5 +85,16 @@ namespace Hw_detNet
             //MessageBox.Show(result);
         }
 
+        private void btn_judgePrime_Click(object sender, EventArgs e)
+        {
+            // 查找該數值到根號的整數有沒有 可整除的餘數
+            // 7是不是質數 
+            int.TryParse(inputNum.Text, out int userInput);
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

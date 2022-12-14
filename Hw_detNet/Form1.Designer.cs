@@ -33,7 +33,7 @@
             this.btn_judgeTime = new System.Windows.Forms.Button();
             this.btn_judgePrime = new System.Windows.Forms.Button();
             this.btn_letterChange = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.inputNum = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.btn_LeftStar = new System.Windows.Forms.Button();
             this.btnRightStar = new System.Windows.Forms.Button();
@@ -48,7 +48,7 @@
             this.panel1.Controls.Add(this.btnRightStar);
             this.panel1.Controls.Add(this.btn_LeftStar);
             this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.inputNum);
             this.panel1.Controls.Add(this.btn_letterChange);
             this.panel1.Controls.Add(this.btn_judgePrime);
             this.panel1.Controls.Add(this.btn_judgeTime);
@@ -88,6 +88,7 @@
             this.btn_judgePrime.TabIndex = 3;
             this.btn_judgePrime.Text = "hw3_判斷是否為質數";
             this.btn_judgePrime.UseVisualStyleBackColor = true;
+            this.btn_judgePrime.Click += new System.EventHandler(this.btn_judgePrime_Click);
             // 
             // btn_letterChange
             // 
@@ -100,12 +101,13 @@
             this.btn_letterChange.UseVisualStyleBackColor = true;
             this.btn_letterChange.Click += new System.EventHandler(this.btn_letterChange_Click);
             // 
-            // textBox1
+            // inputNum
             // 
-            this.textBox1.Location = new System.Drawing.Point(168, 208);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
-            this.textBox1.TabIndex = 5;
+            this.inputNum.Location = new System.Drawing.Point(168, 208);
+            this.inputNum.Name = "inputNum";
+            this.inputNum.Size = new System.Drawing.Size(100, 25);
+            this.inputNum.TabIndex = 5;
+            this.inputNum.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dateTimePicker1
             // 
@@ -182,7 +184,7 @@
         private System.Windows.Forms.Button btn_judgeTime;
         private System.Windows.Forms.Button btn_99Multiple;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox inputNum;
         private System.Windows.Forms.Button btn_letterChange;
         private System.Windows.Forms.Button btn_judgePrime;
         private System.Windows.Forms.Button btnMidStar;
