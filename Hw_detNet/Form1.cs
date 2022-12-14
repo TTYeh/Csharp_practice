@@ -28,47 +28,57 @@ namespace Hw_detNet
         {
             // https://dotblogs.com.tw/chou/2009/06/04/8666
             // btn_judgeTime.Click += btn_judgeTime_Click;
-            btn_judgeTime.PerformClick();
+            // btn_judgeTime.PerformClick();
         }
 
         private void btn_judgeTime_Click(object sender, EventArgs e)
         {
             // 判斷在時間內
+
             int weekDay = Convert.ToInt32(dateTimePicker1.Value.DayOfWeek);
             int hour = Convert.ToInt32(dateTimePicker1.Value.Hour);
             int minute = Convert.ToInt32(dateTimePicker1.Value.Minute);
-            textBoxShow.Text = $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} \n在星期: {weekDay} \n小時: {hour} \n分鐘: {minute}";
-            /*
+            string result = $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} \n在星期: {weekDay} \n小時: {hour} \n分鐘: {minute} \r\n";
+            
             if (IsTradingHours(dateTimePicker1.Value))
             {
-                textBoxShow.Text = $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} 在營業範圍";
+                result += $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} 在營業範圍";
             }
             else {
-                textBoxShow.Text = $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} 沒有在營業範圍";
+                result += $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} 沒有在營業範圍";
             }
-            */
+            textBoxShow.Text = result;
         }
         public static bool IsTradingHours(DateTime dt)
         {
+            string msg = "";
             int weekDay = Convert.ToInt32(dt.DayOfWeek);
             int hour = Convert.ToInt32(dt.Hour);
             int minute = Convert.ToInt32(dt.Minute);
+
+            msg += $"{Enumerable.Range(1, 5).Contains(weekDay)} \r\n";
+            msg += $"{9 <= hour && 13>=hour} \r\n";
+            msg += $"{0 <= minute && 29>= minute && hour == 13} \r\n";
+            msg += $"{(9 <= hour && 13 >= hour) || 0 <= minute && 29 >= minute && hour == 13} ";
+            MessageBox.Show(msg);
+
             if (Enumerable.Range(1, 5).Contains(weekDay) &&
-                Enumerable.Range(8, 5).Contains(hour) &&
-                Enumerable.Range(1, 5).Contains(minute))
+                (9 <= hour && 13 >= hour) || 0 <= minute && 29 >= minute && hour == 13
+            )
             {
-                return true;
+
+                return false;
             }
             else 
             { 
-                return false;
+                return true;
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+            dateTimePicker1.CustomFormat = "MM/dd/yyyy tt HH:mm:ss";
         }
 
         private void btn_99Multiple_Click(object sender, EventArgs e)
@@ -118,7 +128,7 @@ namespace Hw_detNet
                     textBoxShow.Text = $"使用者輸入: {userInput}是質數";
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("不是大於1正整數1。母湯喔");
             }
