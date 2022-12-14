@@ -25,12 +25,43 @@ namespace Hw_detNet
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            btn_judgeTime.Click += btn_judgeTime_Click;
+            // https://dotblogs.com.tw/chou/2009/06/04/8666
+            // btn_judgeTime.Click += btn_judgeTime_Click;
+            btn_judgeTime.PerformClick();
         }
 
         private void btn_judgeTime_Click(object sender, EventArgs e)
         {
-            textBoxShow.Text = Convert.ToString(dateTimePicker1.Value);
+            // 判斷在時間內
+            int weekDay = Convert.ToInt32(dateTimePicker1.Value.DayOfWeek);
+            int hour = Convert.ToInt32(dateTimePicker1.Value.Hour);
+            int minute = Convert.ToInt32(dateTimePicker1.Value.Minute);
+            textBoxShow.Text = $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} \n在星期: {weekDay} \n小時: {hour} \n分鐘: {minute}";
+            /*
+            if (IsTradingHours(dateTimePicker1.Value))
+            {
+                textBoxShow.Text = $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} 在營業範圍";
+            }
+            else {
+                textBoxShow.Text = $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} 沒有在營業範圍";
+            }
+            */
+        }
+        public static bool IsTradingHours(DateTime dt)
+        {
+            int weekDay = Convert.ToInt32(dt.DayOfWeek);
+            int hour = Convert.ToInt32(dt.Hour);
+            int minute = Convert.ToInt32(dt.Minute);
+            if (Enumerable.Range(1, 5).Contains(weekDay) &&
+                Enumerable.Range(8, 5).Contains(hour) &&
+                Enumerable.Range(1, 5).Contains(minute))
+            {
+                return true;
+            }
+            else 
+            { 
+                return false;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
