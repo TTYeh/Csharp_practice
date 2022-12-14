@@ -107,6 +107,7 @@ namespace WindowsFormsApp_practice
 
         private void button7_Click(object sender, EventArgs e)
         {
+
             string[] stars = {"aaa","bbb","ccc" };
             string result = "";
             try
@@ -114,6 +115,10 @@ namespace WindowsFormsApp_practice
                 for (int i = 0; i <= stars.Length; i++)
                 {
                     result += stars[i];
+                    if (stars[i] == "bbb") {
+                        // 例如insert資料庫資料，若有資料驗證的機制，程式碼就不用另外寫驗證，但是要有接資料Exception，能用throw
+                        throw new InsufficientExecutionStackException();
+                    }
                 }
             }
             //catch (IndexOutOfRangeException ex)
@@ -127,6 +132,11 @@ namespace WindowsFormsApp_practice
             finally {
                 MessageBox.Show("Finally");
             }
+
+        }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
 
         }
     }
