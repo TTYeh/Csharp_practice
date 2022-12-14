@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static WindowsFormsApp_practice.Utility;
 
 namespace WindowsFormsApp_practice
 {
@@ -159,6 +160,103 @@ namespace WindowsFormsApp_practice
                 { "a","b","c"},
                 { "d","e","f"}
             };
+        }
+        private void btn_classArr_Click(object sender, EventArgs e)
+        {
+            string result = "";
+            /*
+            Member[] members = new Member[2];
+            members[0] = new Member();
+            members[1] = new Member();
+            members[0].Name = "John";
+            members[0].Age = 10;
+            members[1].Name = "Mike";
+            members[1].Age = 11;
+            */
+
+            Member[] members =
+            {
+                new Member(){Name = "John" , Age = 40 },
+                new Member(){Name = "John" , Age = 41 }
+            };
+            for (int i = 0; i < members.Length; i++)
+            {
+                result += $"{members[i].Name}, {members[i].Age} \n";
+            }
+            MessageBox.Show(result);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            int[] newArr = createNewArr(20);
+
+            string result = "";
+            for (int i = 0; i < newArr.Length; i++)
+            {
+                // result += $"newArr[{i}] = {newArr[i]}\n";
+            }
+
+            foreach (int item in newArr) {
+                result += $"newArr[] = {item}\n";
+            }
+            MessageBox.Show(result);
+        }
+        int[] createNewArr(int Length)
+        {
+            int[] arr = new int[Length];
+            for (int i = 0; i < Length; i++)
+            {
+                arr[i] = i * i;
+            }
+            return arr;
+        }
+
+        private void btn_swap_Click(object sender, EventArgs e)
+        {
+            string A = "AA", B = "BB";
+            MessageBox.Show($"Before: A: {A}, B: {B}");
+            swap(ref A, ref B);
+            MessageBox.Show($"After: A: {A}, B: {B}");
+            int C = 1, D = 2;
+            MessageBox.Show($"Before: C: {C}, D: {D}");
+            swap(ref C, ref D);
+            MessageBox.Show($"After: C: {C}, D: {D}");
+        }
+        void swap(ref int a, ref int b) {
+            int T = a;
+            a = b;
+            b = T;
+        }
+        void swap(ref string a, ref string b)
+        {
+            string T = a;
+            a = b;
+            b = T;
+        }
+        void swap(ref bool a, ref bool b)
+        {
+            bool T = a;
+            a = b;
+            b = T;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int aint = 1, bint = 2;
+            MessageBox.Show($"Before: aint: {aint}, bint:{bint}");
+            genericSwap<int>(ref aint, ref bint);
+            MessageBox.Show($"After: aint: {aint}, bint:{bint}");
+            string astring = "aaa", bstring = "bbb";
+            MessageBox.Show($"Before: astring: {astring}, bstring:{bstring}");
+            genericSwap<string> (ref astring, ref bstring);
+            MessageBox.Show($"After: astring: {astring}, bstring:{bstring}");
+
+        }
+        void genericSwap<Tt>(ref Tt a, ref Tt b)
+        {
+            Tt temp = a;
+            a = b;
+            b = temp;
         }
     }
 }
