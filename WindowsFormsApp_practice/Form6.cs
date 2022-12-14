@@ -108,8 +108,11 @@ namespace WindowsFormsApp_practice
             }
             for (int j = 0, x = 100, y = 50; j + y < x; j += 3, y--)
             {
+                if (j > 10)
+                {
+                    break;
+                }
                 result += $"i={x} , j={j} , y = {y} "+ "\n";
-
             }
 
             MessageBox.Show(result);

@@ -120,9 +120,9 @@
             // 
             this.btn_for.Location = new System.Drawing.Point(320, 131);
             this.btn_for.Name = "btn_for";
-            this.btn_for.Size = new System.Drawing.Size(115, 53);
+            this.btn_for.Size = new System.Drawing.Size(135, 53);
             this.btn_for.TabIndex = 8;
-            this.btn_for.Text = "32_for";
+            this.btn_for.Text = "32_for & 38_break";
             this.btn_for.UseVisualStyleBackColor = true;
             this.btn_for.Click += new System.EventHandler(this.btn_for_Click);
             // 

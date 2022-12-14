@@ -35,7 +35,7 @@
             this.btn_letterChange = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelShowResult = new System.Windows.Forms.Label();
             this.btn_LeftStar = new System.Windows.Forms.Button();
             this.btnRightStar = new System.Windows.Forms.Button();
             this.btnMidStar = new System.Windows.Forms.Button();
@@ -76,6 +76,7 @@
             this.btn_judgeTime.TabIndex = 2;
             this.btn_judgeTime.Text = "hw2_判斷營業時間";
             this.btn_judgeTime.UseVisualStyleBackColor = true;
+            this.btn_judgeTime.Click += new System.EventHandler(this.btn_judgeTime_Click);
             // 
             // btn_judgePrime
             // 
@@ -113,20 +114,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTimePicker1.Location = new System.Drawing.Point(168, 97);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowUpDown = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(236, 25);
             this.dateTimePicker1.TabIndex = 6;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // label1
+            // labelShowResult
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Font = new System.Drawing.Font("新細明體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(467, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(624, 485);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "===輸出區===";
+            this.labelShowResult.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labelShowResult.Font = new System.Drawing.Font("新細明體", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labelShowResult.Location = new System.Drawing.Point(467, 21);
+            this.labelShowResult.Name = "labelShowResult";
+            this.labelShowResult.Size = new System.Drawing.Size(624, 485);
+            this.labelShowResult.TabIndex = 1;
+            this.labelShowResult.Text = "===輸出區===";
             // 
             // btn_LeftStar
             // 
@@ -163,7 +163,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1113, 533);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelShowResult);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -182,7 +182,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_letterChange;
         private System.Windows.Forms.Button btn_judgePrime;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelShowResult;
         private System.Windows.Forms.Button btnMidStar;
         private System.Windows.Forms.Button btnRightStar;
         private System.Windows.Forms.Button btn_LeftStar;

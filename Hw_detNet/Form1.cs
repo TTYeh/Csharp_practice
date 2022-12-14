@@ -25,7 +25,12 @@ namespace Hw_detNet
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
+            btn_judgeTime.Click += btn_judgeTime_Click;
+        }
 
+        private void btn_judgeTime_Click(object sender, EventArgs e)
+        {
+            labelShowResult.Text = Convert.ToString(dateTimePicker1.Value);
         }
     }
 }
