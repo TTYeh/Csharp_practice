@@ -75,22 +75,26 @@ namespace Hw_detNet
             int weekDay = Convert.ToInt32(dt.DayOfWeek);
             int hour = Convert.ToInt32(dt.Hour);
             int minute = Convert.ToInt32(dt.Minute);
-
+			
+			/*
             msg += $"{Enumerable.Range(1, 5).Contains(weekDay)} \r\n";
             msg += $"{9 <= hour && 13>=hour} \r\n";
             msg += $"{0 <= minute && 29>= minute && hour == 13} \r\n";
             msg += $"{(9 <= hour && 13 >= hour) || 0 <= minute && 29 >= minute && hour == 13} ";
             // MessageBox.Show(msg);
-            // 下午1點半還沒有學到
+            */
             if (Enumerable.Range(1, 5).Contains(weekDay) &&
-                (9 <= hour && 13 >= hour)
-            )
+                (9 <= hour && 12 >= hour)
+            ) {
+                return true;
+            }
+            else if (Enumerable.Range(1, 5).Contains(weekDay) && 13 == hour && minute<30)
             {
 
                 return true;
             }
-            else 
-            { 
+            else
+            {
                 return false;
             }
         }
@@ -195,6 +199,11 @@ namespace Hw_detNet
                 result += "\r\n";
             }
             textBoxShow.Text = result;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show((10/4.0).ToString()); //
         }
     }
 }
