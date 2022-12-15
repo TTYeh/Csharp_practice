@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Hw_detNet
 {
@@ -20,8 +21,27 @@ namespace Hw_detNet
         private void btn_letterChange_Click(object sender, EventArgs e)
         {
             // user Regex
-            //“Capital A” (大寫A)
-            //“Lower Case a” (小寫a)
+            string userInput = textBox1.Text;
+            StringBuilder output = new StringBuilder();
+            bool firstEle = true;
+            foreach (char c in userInput)
+            {
+                if (char.IsUpper(c) && firstEle)
+                {
+                    output.Append(Char.ToLower(c));
+                }
+                else if (char.IsUpper(c))
+                {
+                    output.Append("_" + Char.ToLower(c));
+                }
+                else
+                {
+                    output.Append(Char.ToLower(c));
+                }
+                firstEle = false;
+            }
+            textBoxShow.Text = output.ToString();
+
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -38,8 +58,8 @@ namespace Hw_detNet
             int weekDay = Convert.ToInt32(dateTimePicker1.Value.DayOfWeek);
             int hour = Convert.ToInt32(dateTimePicker1.Value.Hour);
             int minute = Convert.ToInt32(dateTimePicker1.Value.Minute);
-            string result = $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} \n在星期: {weekDay} \n小時: {hour} \n分鐘: {minute} \r\n";
-            
+            // string result = $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} \n在星期: {weekDay} \n小時: {hour} \n分鐘: {minute} \r\n";
+            string result = "";
             if (IsTradingHours(dateTimePicker1.Value))
             {
                 result += $"您輸入的時間: {Convert.ToString(dateTimePicker1.Value)} 在營業範圍";
@@ -60,18 +80,18 @@ namespace Hw_detNet
             msg += $"{9 <= hour && 13>=hour} \r\n";
             msg += $"{0 <= minute && 29>= minute && hour == 13} \r\n";
             msg += $"{(9 <= hour && 13 >= hour) || 0 <= minute && 29 >= minute && hour == 13} ";
-            MessageBox.Show(msg);
-
+            // MessageBox.Show(msg);
+            // 下午1點半還沒有學到
             if (Enumerable.Range(1, 5).Contains(weekDay) &&
-                (9 <= hour && 13 >= hour) || 0 <= minute && 29 >= minute && hour == 13
+                (9 <= hour && 13 >= hour)
             )
             {
 
-                return false;
+                return true;
             }
             else 
             { 
-                return true;
+                return false;
             }
         }
 

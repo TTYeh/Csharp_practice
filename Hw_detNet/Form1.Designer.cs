@@ -29,21 +29,23 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_99Multiple = new System.Windows.Forms.Button();
-            this.btn_judgeTime = new System.Windows.Forms.Button();
-            this.btn_judgePrime = new System.Windows.Forms.Button();
-            this.btn_letterChange = new System.Windows.Forms.Button();
-            this.inputNum = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.btn_LeftStar = new System.Windows.Forms.Button();
-            this.btnRightStar = new System.Windows.Forms.Button();
             this.btnMidStar = new System.Windows.Forms.Button();
+            this.btnRightStar = new System.Windows.Forms.Button();
+            this.btn_LeftStar = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.inputNum = new System.Windows.Forms.TextBox();
+            this.btn_letterChange = new System.Windows.Forms.Button();
+            this.btn_judgePrime = new System.Windows.Forms.Button();
+            this.btn_judgeTime = new System.Windows.Forms.Button();
+            this.btn_99Multiple = new System.Windows.Forms.Button();
             this.textBoxShow = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.btnMidStar);
             this.panel1.Controls.Add(this.btnRightStar);
             this.panel1.Controls.Add(this.btn_LeftStar);
@@ -58,56 +60,38 @@
             this.panel1.Size = new System.Drawing.Size(407, 491);
             this.panel1.TabIndex = 0;
             // 
-            // btn_99Multiple
+            // btnMidStar
             // 
-            this.btn_99Multiple.Location = new System.Drawing.Point(13, 26);
-            this.btn_99Multiple.Name = "btn_99Multiple";
-            this.btn_99Multiple.Size = new System.Drawing.Size(149, 65);
-            this.btn_99Multiple.TabIndex = 1;
-            this.btn_99Multiple.Text = "hw1_99乘法表";
-            this.btn_99Multiple.UseVisualStyleBackColor = true;
-            this.btn_99Multiple.Click += new System.EventHandler(this.btn_99Multiple_Click);
+            this.btnMidStar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnMidStar.Location = new System.Drawing.Point(168, 381);
+            this.btnMidStar.Name = "btnMidStar";
+            this.btnMidStar.Size = new System.Drawing.Size(149, 65);
+            this.btnMidStar.TabIndex = 9;
+            this.btnMidStar.Text = "hw5_正三角星星";
+            this.btnMidStar.UseVisualStyleBackColor = true;
+            this.btnMidStar.Click += new System.EventHandler(this.btnMidStar_Click);
             // 
-            // btn_judgeTime
+            // btnRightStar
             // 
-            this.btn_judgeTime.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_judgeTime.Location = new System.Drawing.Point(13, 97);
-            this.btn_judgeTime.Name = "btn_judgeTime";
-            this.btn_judgeTime.Size = new System.Drawing.Size(149, 65);
-            this.btn_judgeTime.TabIndex = 2;
-            this.btn_judgeTime.Text = "hw2_判斷營業時間";
-            this.btn_judgeTime.UseVisualStyleBackColor = true;
-            this.btn_judgeTime.Click += new System.EventHandler(this.btn_judgeTime_Click);
+            this.btnRightStar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRightStar.Location = new System.Drawing.Point(13, 381);
+            this.btnRightStar.Name = "btnRightStar";
+            this.btnRightStar.Size = new System.Drawing.Size(149, 65);
+            this.btnRightStar.TabIndex = 8;
+            this.btnRightStar.Text = "hw5_右三角星星";
+            this.btnRightStar.UseVisualStyleBackColor = true;
+            this.btnRightStar.Click += new System.EventHandler(this.btnRightStar_Click);
             // 
-            // btn_judgePrime
+            // btn_LeftStar
             // 
-            this.btn_judgePrime.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_judgePrime.Location = new System.Drawing.Point(13, 168);
-            this.btn_judgePrime.Name = "btn_judgePrime";
-            this.btn_judgePrime.Size = new System.Drawing.Size(149, 65);
-            this.btn_judgePrime.TabIndex = 3;
-            this.btn_judgePrime.Text = "hw3_判斷是否為質數";
-            this.btn_judgePrime.UseVisualStyleBackColor = true;
-            this.btn_judgePrime.Click += new System.EventHandler(this.btn_judgePrime_Click);
-            // 
-            // btn_letterChange
-            // 
-            this.btn_letterChange.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_letterChange.Location = new System.Drawing.Point(13, 239);
-            this.btn_letterChange.Name = "btn_letterChange";
-            this.btn_letterChange.Size = new System.Drawing.Size(149, 65);
-            this.btn_letterChange.TabIndex = 4;
-            this.btn_letterChange.Text = "hw4_字母大小寫轉換";
-            this.btn_letterChange.UseVisualStyleBackColor = true;
-            this.btn_letterChange.Click += new System.EventHandler(this.btn_letterChange_Click);
-            // 
-            // inputNum
-            // 
-            this.inputNum.Location = new System.Drawing.Point(168, 208);
-            this.inputNum.Name = "inputNum";
-            this.inputNum.Size = new System.Drawing.Size(100, 25);
-            this.inputNum.TabIndex = 5;
-            this.inputNum.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.btn_LeftStar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_LeftStar.Location = new System.Drawing.Point(13, 310);
+            this.btn_LeftStar.Name = "btn_LeftStar";
+            this.btn_LeftStar.Size = new System.Drawing.Size(149, 65);
+            this.btn_LeftStar.TabIndex = 7;
+            this.btn_LeftStar.Text = "hw5_左三角星星";
+            this.btn_LeftStar.UseVisualStyleBackColor = true;
+            this.btn_LeftStar.Click += new System.EventHandler(this.btn_LeftStar_Click);
             // 
             // dateTimePicker1
             // 
@@ -122,38 +106,56 @@
             this.dateTimePicker1.TabIndex = 6;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // btn_LeftStar
+            // inputNum
             // 
-            this.btn_LeftStar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_LeftStar.Location = new System.Drawing.Point(13, 310);
-            this.btn_LeftStar.Name = "btn_LeftStar";
-            this.btn_LeftStar.Size = new System.Drawing.Size(149, 65);
-            this.btn_LeftStar.TabIndex = 7;
-            this.btn_LeftStar.Text = "hw5_左三角星星";
-            this.btn_LeftStar.UseVisualStyleBackColor = true;
-            this.btn_LeftStar.Click += new System.EventHandler(this.btn_LeftStar_Click);
+            this.inputNum.Location = new System.Drawing.Point(168, 208);
+            this.inputNum.Name = "inputNum";
+            this.inputNum.Size = new System.Drawing.Size(100, 25);
+            this.inputNum.TabIndex = 5;
+            this.inputNum.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // btnRightStar
+            // btn_letterChange
             // 
-            this.btnRightStar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnRightStar.Location = new System.Drawing.Point(13, 381);
-            this.btnRightStar.Name = "btnRightStar";
-            this.btnRightStar.Size = new System.Drawing.Size(149, 65);
-            this.btnRightStar.TabIndex = 8;
-            this.btnRightStar.Text = "hw5_右三角星星";
-            this.btnRightStar.UseVisualStyleBackColor = true;
-            this.btnRightStar.Click += new System.EventHandler(this.btnRightStar_Click);
+            this.btn_letterChange.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_letterChange.Location = new System.Drawing.Point(13, 239);
+            this.btn_letterChange.Name = "btn_letterChange";
+            this.btn_letterChange.Size = new System.Drawing.Size(149, 65);
+            this.btn_letterChange.TabIndex = 4;
+            this.btn_letterChange.Text = "hw4_字母大小寫轉換";
+            this.btn_letterChange.UseVisualStyleBackColor = true;
+            this.btn_letterChange.Click += new System.EventHandler(this.btn_letterChange_Click);
             // 
-            // btnMidStar
+            // btn_judgePrime
             // 
-            this.btnMidStar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnMidStar.Location = new System.Drawing.Point(168, 381);
-            this.btnMidStar.Name = "btnMidStar";
-            this.btnMidStar.Size = new System.Drawing.Size(149, 65);
-            this.btnMidStar.TabIndex = 9;
-            this.btnMidStar.Text = "hw5_正三角星星";
-            this.btnMidStar.UseVisualStyleBackColor = true;
-            this.btnMidStar.Click += new System.EventHandler(this.btnMidStar_Click);
+            this.btn_judgePrime.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_judgePrime.Location = new System.Drawing.Point(13, 168);
+            this.btn_judgePrime.Name = "btn_judgePrime";
+            this.btn_judgePrime.Size = new System.Drawing.Size(149, 65);
+            this.btn_judgePrime.TabIndex = 3;
+            this.btn_judgePrime.Text = "hw3_判斷是否為質數";
+            this.btn_judgePrime.UseVisualStyleBackColor = true;
+            this.btn_judgePrime.Click += new System.EventHandler(this.btn_judgePrime_Click);
+            // 
+            // btn_judgeTime
+            // 
+            this.btn_judgeTime.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn_judgeTime.Location = new System.Drawing.Point(13, 97);
+            this.btn_judgeTime.Name = "btn_judgeTime";
+            this.btn_judgeTime.Size = new System.Drawing.Size(149, 65);
+            this.btn_judgeTime.TabIndex = 2;
+            this.btn_judgeTime.Text = "hw2_判斷營業時間";
+            this.btn_judgeTime.UseVisualStyleBackColor = true;
+            this.btn_judgeTime.Click += new System.EventHandler(this.btn_judgeTime_Click);
+            // 
+            // btn_99Multiple
+            // 
+            this.btn_99Multiple.Location = new System.Drawing.Point(13, 26);
+            this.btn_99Multiple.Name = "btn_99Multiple";
+            this.btn_99Multiple.Size = new System.Drawing.Size(149, 65);
+            this.btn_99Multiple.TabIndex = 1;
+            this.btn_99Multiple.Text = "hw1_99乘法表";
+            this.btn_99Multiple.UseVisualStyleBackColor = true;
+            this.btn_99Multiple.Click += new System.EventHandler(this.btn_99Multiple_Click);
             // 
             // textBoxShow
             // 
@@ -163,6 +165,13 @@
             this.textBoxShow.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxShow.Size = new System.Drawing.Size(624, 491);
             this.textBoxShow.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(171, 279);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 25);
+            this.textBox1.TabIndex = 10;
             // 
             // Form1
             // 
@@ -194,6 +203,7 @@
         private System.Windows.Forms.Button btnRightStar;
         private System.Windows.Forms.Button btn_LeftStar;
         private System.Windows.Forms.TextBox textBoxShow;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
