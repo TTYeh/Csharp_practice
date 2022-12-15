@@ -39,10 +39,8 @@
             this.btn_for = new System.Windows.Forms.Button();
             this.btn_1d_arr = new System.Windows.Forms.Button();
             this.btn_2d_arr = new System.Windows.Forms.Button();
-            this.btn_classArr = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btn_swap = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn39 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_logic
@@ -113,9 +111,9 @@
             // 
             this.btnDoLoop.Location = new System.Drawing.Point(320, 72);
             this.btnDoLoop.Name = "btnDoLoop";
-            this.btnDoLoop.Size = new System.Drawing.Size(115, 53);
+            this.btnDoLoop.Size = new System.Drawing.Size(135, 53);
             this.btnDoLoop.TabIndex = 7;
-            this.btnDoLoop.Text = "31do";
+            this.btnDoLoop.Text = "31_do";
             this.btnDoLoop.UseVisualStyleBackColor = true;
             this.btnDoLoop.Click += new System.EventHandler(this.btnDoLoop_Click);
             // 
@@ -123,9 +121,9 @@
             // 
             this.btn_for.Location = new System.Drawing.Point(320, 131);
             this.btn_for.Name = "btn_for";
-            this.btn_for.Size = new System.Drawing.Size(115, 53);
+            this.btn_for.Size = new System.Drawing.Size(135, 53);
             this.btn_for.TabIndex = 8;
-            this.btn_for.Text = "32_for";
+            this.btn_for.Text = "32_for & 38_break";
             this.btn_for.UseVisualStyleBackColor = true;
             this.btn_for.Click += new System.EventHandler(this.btn_for_Click);
             // 
@@ -149,55 +147,33 @@
             this.btn_2d_arr.UseVisualStyleBackColor = true;
             this.btn_2d_arr.Click += new System.EventHandler(this.btn_2d_arr_Click);
             // 
-            // btn_classArr
-            // 
-            this.btn_classArr.Location = new System.Drawing.Point(320, 308);
-            this.btn_classArr.Name = "btn_classArr";
-            this.btn_classArr.Size = new System.Drawing.Size(135, 53);
-            this.btn_classArr.TabIndex = 11;
-            this.btn_classArr.Text = "35_build_classArr";
-            this.btn_classArr.UseVisualStyleBackColor = true;
-            this.btn_classArr.Click += new System.EventHandler(this.btn_classArr_Click);
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(486, 72);
+            this.button2.Location = new System.Drawing.Point(320, 308);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(201, 53);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "36_createArrByMethod";
+            this.button2.Size = new System.Drawing.Size(135, 53);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "37_foreach_Controls";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // btn_swap
+            // btn39
             // 
-            this.btn_swap.Location = new System.Drawing.Point(486, 190);
-            this.btn_swap.Name = "btn_swap";
-            this.btn_swap.Size = new System.Drawing.Size(201, 53);
-            this.btn_swap.TabIndex = 13;
-            this.btn_swap.Text = "37_swap_overLoad";
-            this.btn_swap.UseVisualStyleBackColor = true;
-            this.btn_swap.Click += new System.EventHandler(this.btn_swap_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(486, 249);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(201, 53);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "37_swap_generic";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn39.Location = new System.Drawing.Point(471, 72);
+            this.btn39.Name = "btn39";
+            this.btn39.Size = new System.Drawing.Size(135, 53);
+            this.btn39.TabIndex = 12;
+            this.btn39.Text = "39_do_continue";
+            this.btn39.UseVisualStyleBackColor = true;
+            this.btn39.Click += new System.EventHandler(this.btn39_Click);
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.btn_swap);
+            this.Controls.Add(this.btn39);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btn_classArr);
             this.Controls.Add(this.btn_2d_arr);
             this.Controls.Add(this.btn_1d_arr);
             this.Controls.Add(this.btn_for);
@@ -229,10 +205,7 @@
         private System.Windows.Forms.Button btn_for;
         private System.Windows.Forms.Button btn_1d_arr;
         private System.Windows.Forms.Button btn_2d_arr;
-        private System.Windows.Forms.Button btn_classArr;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btn_swap;
-        private System.Windows.Forms.Button button3;
-
+        private System.Windows.Forms.Button btn39;
     }
 }

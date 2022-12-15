@@ -36,6 +36,7 @@
             // 
             // btnEnter
             // 
+            this.btnEnter.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnEnter.Font = new System.Drawing.Font("標楷體", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnEnter.Location = new System.Drawing.Point(400, 26);
             this.btnEnter.Name = "btnEnter";
