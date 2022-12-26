@@ -8,7 +8,7 @@ namespace Ispan_dotNetHw_IsPrimeNumber_UT
         public void Setup()
         {
         }
-
+        [TestCase(1)]
         [TestCase(7)]
         public void IsPrimeNumber_代刚借计ReturnTrue(int inputNum)
         {
@@ -17,7 +17,8 @@ namespace Ispan_dotNetHw_IsPrimeNumber_UT
             bool actual = MyCal.IsPrimeNumber(inputNum);
             Assert.AreEqual(expected, actual);
         }
-
+        [TestCase(2)]
+        [TestCase(49)]
         [TestCase(14)]
         [TestCase(51)]
         public void IsPrimeNumber_代刚借计ReturnFalse(int inputNum)
