@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ispan_dotNetHw_printStar_Lib", "ispan_dotNetHw_printStar\ispan_dotNetHw_printStar_Lib.csproj", "{ADA50DA1-A335-4091-9A3F-11A1DC144148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ispan_dotNetHw_printStar_UnitTests", "ispan_dotNetHw_printStar_UnitTests\ispan_dotNetHw_printStar_UnitTests.csproj", "{3AA6480B-5E54-450E-9371-E9652AAD104B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ispan_dotNetHw_printStar_ConsoleApp", "ispan_dotNetHw_printStar_ConsoleApp\ispan_dotNetHw_printStar_ConsoleApp.csproj", "{84F1F5DE-3B84-4101-9FF7-9358D3BF5A51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADA50DA1-A335-4091-9A3F-11A1DC144148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA50DA1-A335-4091-9A3F-11A1DC144148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA50DA1-A335-4091-9A3F-11A1DC144148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA50DA1-A335-4091-9A3F-11A1DC144148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA6480B-5E54-450E-9371-E9652AAD104B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA6480B-5E54-450E-9371-E9652AAD104B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA6480B-5E54-450E-9371-E9652AAD104B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA6480B-5E54-450E-9371-E9652AAD104B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F1F5DE-3B84-4101-9FF7-9358D3BF5A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F1F5DE-3B84-4101-9FF7-9358D3BF5A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F1F5DE-3B84-4101-9FF7-9358D3BF5A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F1F5DE-3B84-4101-9FF7-9358D3BF5A51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1CF1A52-BB3F-4B5C-A65E-CB80617D7960}
+	EndGlobalSection
+EndGlobal
