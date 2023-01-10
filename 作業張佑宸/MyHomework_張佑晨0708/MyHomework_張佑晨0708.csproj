@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6424DEFB-BB13-4DD2-AAF4-CC829A8AE18A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyHomework_張佑晨0708</RootNamespace>
+    <AssemblyName>MyHomework_張佑晨0708</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>MyHomework_張佑晨.HomeIndex</StartupObject>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSIT_Csharp_Quiz_張佑晨\Class1.cs" />
+    <Compile Include="MSIT_Csharp_Quiz_張佑晨\FormGuess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSIT_Csharp_Quiz_張佑晨\FormGuess.Designer.cs">
+      <DependentUpon>FormGuess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSIT_Csharp_Quiz_張佑晨\FormGuessMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSIT_Csharp_Quiz_張佑晨\FormGuessMessageBox.Designer.cs">
+      <DependentUpon>FormGuessMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSIT_Csharp_Quiz_張佑晨_Alarm\FormAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSIT_Csharp_Quiz_張佑晨_Alarm\FormAlarm.Designer.cs">
+      <DependentUpon>FormAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myhomework_0718_Notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Myhomework_0718_Notepad.Designer.cs">
+      <DependentUpon>Myhomework_0718_Notepad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myhomework_0718_Notepad_About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Myhomework_0718_Notepad_About.Designer.cs">
+      <DependentUpon>Myhomework_0718_Notepad_About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myhomework_0718_ScreenSaver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Myhomework_0718_ScreenSaver.Designer.cs">
+      <DependentUpon>Myhomework_0718_ScreenSaver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_0722_PictureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_0722_PictureViewer.Designer.cs">
+      <DependentUpon>MyHomework_0722_PictureViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myhomework_0723_DrawPaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Myhomework_0723_DrawPaint.Designer.cs">
+      <DependentUpon>Myhomework_0723_DrawPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨0704\Myhomework_0704_Loan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨0704\Myhomework_0704_Loan.Designer.cs">
+      <DependentUpon>Myhomework_0704_Loan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨0705\Myhomework_0705_POShp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨0705\Myhomework_0705_POShp.Designer.cs">
+      <DependentUpon>Myhomework_0705_POShp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\HomeIndex.cs" />
+    <Compile Include="MyHomework_張佑晨\index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0703_Hello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0703_Hello.Designer.cs">
+      <DependentUpon>Myhomework_0703_Hello.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0704_LoanReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0704_LoanReport.Designer.cs">
+      <DependentUpon>Myhomework_0704_LoanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0709_StudentsGrade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0709_StudentsGrade.Designer.cs">
+      <DependentUpon>Myhomework_0709_StudentsGrade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0710_StudentsGrade_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0710_StudentsGrade_List.Designer.cs">
+      <DependentUpon>Myhomework_0710_StudentsGrade_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0711_Method.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0711_Method.Designer.cs">
+      <DependentUpon>Myhomework_0711_Method.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0711_MyClac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0711_MyClac.Designer.cs">
+      <DependentUpon>Myhomework_0711_MyClac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0712_ForDoWhile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0712_ForDoWhile.Designer.cs">
+      <DependentUpon>Myhomework_0712_ForDoWhile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0716_XOGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Myhomework_0716_XOGame.Designer.cs">
+      <DependentUpon>Myhomework_0716_XOGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Properties\Resources.cs" />
+    <Compile Include="MyHomework_張佑晨\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Statistics.cs" />
+    <Compile Include="MyHomework_張佑晨\Student_StructForm_0708.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\Student_StructForm_0708.Designer.cs">
+      <DependentUpon>Student_StructForm_0708.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyHomework_張佑晨\StuGrade.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HomePage.resources" />
+    <EmbeddedResource Include="MSIT_Csharp_Quiz_張佑晨\FormGuess.resources" />
+    <EmbeddedResource Include="MSIT_Csharp_Quiz_張佑晨\FormGuessMessageBox.resources" />
+    <EmbeddedResource Include="MSIT_Csharp_Quiz_張佑晨_Alarm\FormAlarm.resources" />
+    <EmbeddedResource Include="Myhomework_0718_Notepad.resources" />
+    <EmbeddedResource Include="Myhomework_0718_Notepad_About.resources" />
+    <EmbeddedResource Include="Myhomework_0718_ScreenSaver.resources" />
+    <EmbeddedResource Include="MyHomework_0722_PictureViewer.resources" />
+    <EmbeddedResource Include="Myhomework_0723_DrawPaint.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨0704\Myhomework_0704_Loan.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨0705\Myhomework_0705_POShp.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\index.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\Myhomework_0703_Hello.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\Myhomework_0704_LoanReport.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\Myhomework_0709_StudentsGrade.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\Myhomework_0710_StudentsGrade_List.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\Myhomework_0711_Method.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\Myhomework_0711_MyClac.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\Myhomework_0712_ForDoWhile.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\Myhomework_0716_XOGame.resources" />
+    <EmbeddedResource Include="MyHomework_張佑晨\Student_StructForm_0708.resources" />
+    <EmbeddedResource Include="Properties\Resources.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="MyHomework_張佑晨\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
